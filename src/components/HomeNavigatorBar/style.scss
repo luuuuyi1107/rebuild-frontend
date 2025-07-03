@@ -1,0 +1,52 @@
+
+@import "@/_theme/theme.scss";
+
+.home-navigator-bar{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.88rem;
+  background-color: #ffffff;
+  border-top: 1px solid darken($background-color, 5);
+  font-size: 0.26rem;
+  .tab{
+    flex: 1;
+    color: #666;
+    text-align: center;
+    padding-top: 0.1rem;
+    opacity: .95;
+    position: relative;
+    &:active{
+      background-color: rgba(0, 0, 0, .1);
+    }
+    &.active{
+      color: $primary-color;
+    }
+    .ons-icon{
+      font-size: 0.4rem;
+      vertical-align: -10%;
+      margin: 0;
+    }
+    .text{
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+    .bubble{
+        position: absolute;
+        font-size: 0.24rem;
+        height: 0.32rem;
+        width: 0.32rem;
+        line-height: 0.32rem;
+        text-align: center;
+        background-color: #f00;
+        border-radius: 0.06rem;
+        color: #FFF;
+        top: 0.06rem;
+        left: 50%;
+        margin-left: 0.16rem;
+    }
+  }
+
+
+}

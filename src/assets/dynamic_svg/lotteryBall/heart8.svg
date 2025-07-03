@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.118" height="26" viewBox="0 0 19.118 26">
+  <g id="heart_8" data-name="heart 8" transform="translate(-0.25)">
+    <g id="组_3512" data-name="组 3512" transform="translate(0.25)">
+      <path id="路径_3072" data-name="路径 3072" d="M3.449,26.975a1.936,1.936,0,0,1-1.974-1.886L1.42,3.806a1.932,1.932,0,0,1,1.971-1.9l14.423.026a1.938,1.938,0,0,1,1.968,1.9V25.071a1.93,1.93,0,0,1-1.963,1.886l-14.373.018Z" transform="translate(-1.11 -1.417)" fill="#c9c9c9"/>
+      <g id="组_3511" data-name="组 3511">
+        <path id="路径_3073" data-name="路径 3073" d="M3.409,26.464a2.172,2.172,0,0,1-2.2-2.136V3.1A2.17,2.17,0,0,1,3.409.96H17.623a2.172,2.172,0,0,1,2.2,2.136V24.328a2.17,2.17,0,0,1-2.2,2.136Z" transform="translate(-0.956 -0.712)" fill="#fff"/>
+        <path id="路径_3074" data-name="路径 3074" d="M16.917.5a1.919,1.919,0,0,1,1.945,1.888V23.616A1.919,1.919,0,0,1,16.917,25.5H2.7A1.919,1.919,0,0,1,.759,23.616V2.384A1.919,1.919,0,0,1,2.7.5H16.917m0-.5H2.7A2.423,2.423,0,0,0,.25,2.384V23.616A2.421,2.421,0,0,0,2.7,26H16.917a2.421,2.421,0,0,0,2.451-2.384V2.384A2.421,2.421,0,0,0,16.917,0Z" transform="translate(-0.25 0)" fill="#383838"/>
+      </g>
+    </g>
+    <text id="_8" data-name="8" transform="translate(2.224 11.578)" fill="#c62a34" font-size="13" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">8</tspan></text>
+    <path id="路径_3075" data-name="路径 3075" d="M31.647,55.963c-.154,2.8-5.913,7.057-5.913,7.057s-5.924-4.288-5.924-7.093a3.546,3.546,0,0,1,3.6-3.487,4.687,4.687,0,0,1,2.347.976,4.294,4.294,0,0,1,2.318-.961,3.491,3.491,0,0,1,3.577,3.505Z" transform="translate(-14.378 -38.894)" fill="#c62a34"/>
+    <g id="组_3513" data-name="组 3513" transform="translate(8.701 15.716)">
+      <path id="路径_3076" data-name="路径 3076" d="M32.15,60.84l4.4,1.015.948.656-3.089,4.3Z" transform="translate(-32.15 -60.84)" fill="none" stroke="#fff" stroke-width="0.5"/>
+      <path id="路径_3077" data-name="路径 3077" d="M43.684,65.21,42.02,66.979l2.562-1.155" transform="translate(-39.405 -64.081)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="0.5"/>
+      <path id="路径_3078" data-name="路径 3078" d="M32.61,61.3,35.1,64.08l-.358,2.86" transform="translate(-32.488 -61.181)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

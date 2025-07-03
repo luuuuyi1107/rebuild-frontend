@@ -1,0 +1,219 @@
+@import "@/_theme/theme.scss";
+.dice-game-table {
+  .fist {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0;
+    overflow: hidden;
+    &.active {
+      animation: click 0.2s forwards;
+    }
+  }
+  .content {
+    padding: 0 0.2rem;
+    width: 90%;
+    margin: auto;
+  }
+  .item {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    margin: auto 0 0.35rem;
+    display: flex;
+    .inline {
+      margin-left: 0.2rem;
+      display: flex;
+      &:nth-child(1) {
+        font-size: 0.26rem;
+      }
+      &:nth-child(2) {
+        flex: 1;
+      }
+    }
+    .inputBox input {
+      border-bottom: 1px solid #f1f1f1;
+      width: 90%;
+    }
+  }
+  .tip {
+    width: 100%;
+    padding-top: 0.3rem;
+    line-height: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-color;
+    margin-bottom: 0.3rem;
+    span {
+      margin: 0.025rem;
+      &:nth-child(2) {
+        background: $primary-color;
+        color: #fff;
+        padding: 0 0.2rem;
+        border-radius: 15px;
+      }
+    }
+  }
+  .inputBox {
+    width: 100%;
+    margin: auto;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0;
+    border: none;
+    .ons-icon {
+      font-size: 0.4rem;
+      top: 0.3rem;
+      display: none;
+      &.subfix {
+        display: block;
+      }
+    }
+    ons-input input {
+      font-size: 0.26rem;
+      padding: 0;
+    }
+  }
+  .submit {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    .button {
+      width: 40%;
+      &:first-child {
+        background: transparent;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        width: 100%;
+      }
+    }
+  }
+  .round-info {
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    //padding: 0 0 20px;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(132, 132, 132, 0.32);
+    .poker-group {
+      //padding-top: 0.65rem;
+      background: url("/public/images/gameTable/bg_02.png") center no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 9rem;
+      .point {
+        width: 100%;
+        text-align: center;
+        font-size: 0.5rem;
+        color: #fff;
+      }
+    }
+    .pokerItem {
+      display: flex;
+      color: #666;
+      line-height: 0.4rem;
+      width: 100%;
+      &:first-child {
+        color: #1f1f21;
+        box-sizing: border-box;
+      }
+      .poker {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        //margin-top: 1.5rem;
+        .not-select {
+          background: rgba(255, 255, 255, 0.5);
+          border: 1px solid #fff;
+          margin-bottom: 0.5rem;
+          box-sizing: border-box;
+          font-size: 12px;
+          line-height: 50px;
+        }
+        .dice {
+          width: 0.65rem;
+          height: 0.65rem;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          margin: 0 0.15rem;
+        }
+        .dice1 {
+          background-image: url("/public/images/gameTable/1.png");
+        }
+        .dice2 {
+          background-image: url("/public/images/gameTable/2.png");
+        }
+        .dice3 {
+          background-image: url("/public/images/gameTable/3.png");
+        }
+        .dice4 {
+          background-image: url("/public/images/gameTable/4.png");
+        }
+        .dice5 {
+          background-image: url("/public/images/gameTable/5.png");
+        }
+        .dice6 {
+          background-image: url("/public/images/gameTable/6.png");
+        }
+        .diceQ1 {
+          background-image: url("/public/images/gameTable/dice.gif");
+        }
+        .diceQ2 {
+          background-image: url("/public/images/gameTable/dice_02.gif");
+        }
+        .diceQ3 {
+          background-image: url("/public/images/gameTable/dice_03.gif");
+        }
+      }
+    }
+    .dian {
+      min-width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      height: 50%;
+      margin-bottom: 0;
+      .dianItem {
+        line-height: 0.6rem;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        height: 50%;
+        &.dianItem-title {
+          font-size: 0.3rem;
+          line-height: 3rem;
+        }
+      }
+    }
+    .p30 {
+      width: 33%;
+      justify-content: center;
+    }
+  }
+}
+@keyframes click {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .dice-game-table .round-info .poker-group {
+    height: 15rem;
+  }
+  .dice-game-table .round-info .dian .dianItem.dianItem-title {
+    font-size: 0.4rem;
+    line-height: 5rem;
+  }
+  .dice-game-table .round-info .pokerItem .poker .dice {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+}

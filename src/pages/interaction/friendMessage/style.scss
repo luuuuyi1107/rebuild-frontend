@@ -1,0 +1,149 @@
+@import "@/_theme/theme.scss";
+
+.friend-page{
+    &.record-page.with-tabs{
+        .tabs ul{
+            display: flex;
+            li{
+                flex: 1;
+            }
+        }
+    }
+    .record-list-item{
+        padding: 0;
+        margin: 0;
+        background-color: #FFF;
+    }
+    .list-item > div{
+        padding-top: .1rem;
+        padding-bottom: .1rem;
+    }
+    .friend-record-item{
+        &:active{
+            background-color: $background-color;
+        }
+        .left{
+            position: relative;
+            .user-icon{
+                width: 1rem;
+                height: 1rem;
+                line-height: 1rem;
+                text-align: center;
+            }
+            .ons-icon{
+                height: .8rem;
+                width: .8rem;
+                line-height: .8rem;
+                background-color: #CCC;
+                font-size: .6rem;
+                border-radius: 5px;
+                color:#FFF;
+            }
+            .count{
+                position: absolute;
+                font-size: .24rem;
+                height: .32rem;
+                width: .32rem;
+                line-height: .32rem;
+                text-align: center;
+                background-color: #f00;
+                border-radius: 3px;
+                color: #FFF;
+                top: .2rem;
+                right: .2rem;
+              }
+        }
+        .center{
+            >div{
+                width: 100%;
+            }
+            .tl{
+                font-size: .26rem;
+                font-weight: bold;
+                color: #333;
+                text-align: left;
+                margin-top: .16rem;
+                .light{
+                    font-weight: normal;
+                    font-weight: normal;
+                    color: #666;
+                    margin-left: .16rem;
+
+                }
+            }
+            .dd{
+                font-size: .24rem;
+                color: #666;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                height: .36rem;
+                line-height: .36rem;
+                margin: 0;
+            }
+        }
+        .right{
+            .btn{
+                padding: .06rem .16rem;
+                background-color: $primary-color;
+                border-radius: 3px;
+                color: #FFF;
+                font-size: .24rem;
+                &.disable{
+                    color: #666;
+                    background-color: #EEE;
+                }
+            }
+        }
+        &.user-info {
+            .center{
+                background-image: none;
+                p{
+                    margin: .1rem 0;
+                }
+            }
+            .right{
+                background-image: none;
+                .btn{
+                    padding: .16rem;
+                }
+            }
+        }
+        
+    }
+    .last-bet{
+        margin-top: .2rem;
+        .hd{
+            text-align: center;
+            font-size: .28rem;
+            color: #666666;
+        }
+        .bd{
+            margin-top: .2rem;
+            padding-bottom: 1rem;
+            table{
+                width: 90%;
+                margin: 0 auto;
+                border-top: 1px solid #eee;
+                border-left: 1px solid #eee;
+                th, td{
+                    border-bottom: 1px solid #eee;
+                    border-right: 1px solid #eee;
+                    padding: .14rem 0;
+                    font-size: .26rem;
+                    color: #333;
+                    text-align: center;
+                }
+                tr.odd{
+                    background-color: $background-color;
+                }
+            }
+        }
+    }
+}
+
+.firiend-info-modal{
+    .page__content{
+        overflow-y: auto!important;
+    }
+}

@@ -1,0 +1,113 @@
+@import "@/_theme/theme.scss";
+
+.site-article{
+    .page__content{
+        padding-bottom: 0.4rem;
+    }
+    .box{
+        padding: 0.2rem 0.4rem 0;
+        border-bottom: 1px solid #F4f4f4;
+        .hd{
+            .title{
+                font-size: 0.4rem;
+                color: #444;
+                font-weight: bold;
+            }
+            .date{
+                font-size: 0.24rem;
+                color: #999;
+                span{
+                    float: right;
+                    ons-icon{
+                        font-size: 0.4rem;
+                        vertical-align: -13%;
+                        margin-right: 0.1rem;
+                    }
+                }
+            }
+        }
+        .bd{
+            font-size: 0.28rem;
+            line-height: 1.8;
+            color: #444;
+            display: none;
+        }
+        &.active .bd{
+            display: block;
+        }
+
+        &.article-content{
+            padding: 0.2rem;
+            font-size: 0.26rem;
+            p{
+                margin: 0;
+            }
+            .title{
+                font-size: 0.4rem;
+                font-weight: 600;
+                //color: #1f1f21;
+                color: #f54;
+            }
+            .time{
+                color: #9a9a9a;
+                padding: 0.2rem 0;
+                span{
+                vertical-align: text-bottom;
+                }
+                .num{
+                float: right;
+                .ons-icon{
+                    font-size: 0.38rem;
+                    margin-right: 0.1rem;
+                }
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .bd{
+                .mainTitle{
+                font-size: .35rem;
+                color: #f54;
+                }
+                .subTitle{
+                list-style-type: circle;
+                font-size: .3rem;
+                text-indent: .15rem;
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 100%;
+                    background: red;
+                    left: 0;
+                    top: .21rem;
+                }
+                }
+                .line{
+                height: 1px;
+                background-color: #ddd;
+                margin: 5px 0;
+                }
+                .active a{
+                border: 1px solid #ccc;
+                padding: 4px 5px;
+                border-radius: 2px;
+                text-decoration: none;
+                }
+            }
+    
+        }
+    }
+
+    .no-record{
+        font-size: 0.24rem;
+        padding: 0.6rem 0;
+        color: #CCC;
+        text-align: center;
+    }
+
+
+}

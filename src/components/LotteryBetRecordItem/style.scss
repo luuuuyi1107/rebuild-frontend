@@ -1,0 +1,88 @@
+@import "@/_theme/theme.scss";
+.bet-record-item {
+  padding: 0.2rem 0;
+  display: flex;
+  .left {
+    max-width: 2.8rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0.2rem;
+
+    p {
+      margin: 0;
+      color: #666;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .center {
+    flex: 1;
+    width: calc(100% - 3.4rem);
+    p {
+      margin: 0;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      color: #444;
+      &.issue {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-size: 0.24rem;
+        strong {
+          margin-right: 0.04rem;
+        }
+        .play-type {
+          font-weight: normal;
+          margin-right: 7px;
+        }
+      }
+      &.content {
+        font-size: 0.24rem;
+        font-weight: normal;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        .bet-text {
+          font-weight: bold;
+          max-width: 100%;
+          display: inline-block;
+          line-height: 0.4rem;
+          white-space: normal;
+          word-break: break-all;
+        }
+        .amount {
+          display: inline-block;
+          line-height: 0.4rem;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  .right {
+    padding: 0 0.1rem;
+    display: flex;
+    align-items: center;
+    line-height: 0.4rem;
+    text-align: right;
+    span {
+      font-size: 0.24rem;
+      display: block;
+    }
+    .unhit {
+      color: #999;
+    }
+    .hit {
+      color: red;
+    }
+    .waiting {
+      color: #555;
+    }
+    .amount {
+      color: #444;
+    }
+  }
+}

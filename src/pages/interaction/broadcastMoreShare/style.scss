@@ -1,0 +1,154 @@
+@import "@/_theme/theme.scss";
+.share-more-page {
+  .content {
+    padding: 20px 8px 0;
+  }
+  .filter {
+    //position: fixed;
+    top: 0.88rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #fff;
+    width: 100%;
+    //border-bottom: 1px solid #F1f1f1;
+    //padding: 0 .2rem;
+    .fitem {
+      width: 2rem;
+      background: $background-color;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      margin-top: 0.1rem;
+      border-radius: 2px;
+      padding: 0 0.1rem;
+      font-size: 0.24rem;
+      color: #333;
+      display: inline-block;
+      margin-right: 0.2rem;
+      vertical-align: top;
+      position: relative;
+      text-align: center;
+      .ons-icon {
+        float: right;
+        color: #666;
+        margin-top: 0.12rem;
+        font-size: 0.4rem;
+      }
+      &:active {
+        background-color: #ccc;
+      }
+    }
+
+    input {
+      position: absolute;
+      z-index: 9;
+      width: 2rem;
+      right: 0;
+      top: 0;
+      height: 0.6rem;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      opacity: 0.01;
+      &::-webkit-calendar-picker-indicator {
+        display: inline-block;
+        width: 2rem;
+        height: 0.6rem;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: 0 none;
+        background-color: #eee;
+        background-image: -webkit-linear-gradient(top, #f0f0f0, #e6e6e6);
+        color: #666;
+      }
+    }
+
+    .title {
+      padding: 0 0.2rem;
+    }
+  }
+
+  .item {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    width: 100%;
+    .ons-icon--ion {
+      margin-left: 5px;
+      vertical-align: middle;
+      font-size: 0.3rem;
+    }
+    .title {
+      padding: 0 0.2rem;
+    }
+  }
+
+  .gamesPopBox {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    .popBoxContent {
+      width: 80%;
+      height: 70%;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      .top {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid #f0f0f0;
+        .gameType {
+          padding: 0.15rem;
+          &.on {
+            background: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+      .bottom {
+        //display: flex;
+        //justify-content: flex-start;
+        //align-items: flex-start;
+        //flex-wrap:wrap;
+        padding: 0.15rem;
+        height: calc(100% - 50px);
+        overflow: scroll;
+        box-sizing: border-box;
+        width: 100%;
+        .gameItem {
+          padding: 0.1rem 0;
+          width: 33%;
+          line-height: 0.4rem;
+          height: 0.4rem;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .submit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    .button {
+      width: 45%;
+      text-align: center;
+      line-height: 25px;
+    }
+  }
+}

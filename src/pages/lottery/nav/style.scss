@@ -1,0 +1,33 @@
+@import "@/_theme/theme.scss";
+
+.lottery-nav{
+    .box{
+        padding: 0 0.3rem;
+        .hd{
+            height: 0.8rem;
+            line-height: 0.8rem;
+            font-size: 0.28rem;
+        }
+        .bd {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .item{
+                width: 30%;
+                height: 0.8rem;
+                text-align: center;
+                line-height: 0.76rem;
+                border: 1px solid #ddd;
+                border-radius: 2px;
+                margin-bottom: 0.2rem;
+                font-size: 0.24rem;
+                color: #444;
+                margin-right: 2%;
+                &:active{
+                    background-color: $background-color;
+                }
+            }
+        }
+
+    }
+}

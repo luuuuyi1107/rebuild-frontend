@@ -1,0 +1,100 @@
+@import "@/_theme/theme.scss";
+
+.send-redpacket-box{
+    width: 5.6rem;
+    background-color: #FFF;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 3px;
+    
+    .hd{
+        background: $primary-color;
+        overflow: auto;
+        h5{
+            margin: .2rem;
+        }
+    }
+    .bd{
+        font-size: .28rem;
+        .summary{
+            color: red;
+            font-weight: bold;
+            font-size: .4rem;
+            padding: .2rem;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .list-item{
+            .left{
+                background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);
+                background-size: 100% 1px;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                width: 1.4rem;
+            }
+            .center{
+                justify-content: flex-end;
+                padding: .08rem .12rem .08rem 0;
+
+            }
+            input{
+                border: 0 none;
+                height: .6rem;
+                line-height: .6rem;
+                font-size: .28rem;
+                text-align: right;
+                width: 3rem;
+            }
+        }
+        .tip{
+            background: #dcdcdc;
+            padding: .16rem .3rem;
+            text-align: left;
+            color: #2c3e50;
+        }
+        .lei .list-item>div{
+            background: none;
+            font-size: .24rem;
+            color: #666;
+        }
+        .lei{
+            ul{
+                width: 3.6rem;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                padding: 0;
+                list-style: none;
+                li{
+                    width: 20%;
+                    color: #666;
+                    span{
+                        display: block;
+                        height: .6rem;
+                        line-height: .6rem;
+                        width: .6rem;
+                        text-align: center;
+                        background-color: $background-color;
+                        border-radius: 50%;
+                        margin: .1rem;
+                        font-size: .28rem;
+                    }
+                    &.on span{
+                        background-color: $primary-color;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+        .send-button{
+            margin-top: .2rem;
+            .button{
+                width: 3.6rem;
+                font-size: .26rem;
+            }
+            p{
+                font-size: .24rem;
+                color: $primary-color;
+            }
+        }
+    }
+}

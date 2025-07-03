@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="椭圆_16" data-name="椭圆 16" cx="8" cy="8" r="8" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="蒙版组_1" data-name="蒙版组 1" clip-path="url(#clip-path)">
+    <path id="home-circle" d="M16.054,4.743A7.651,7.651,0,0,0,10.4,2.4,7.634,7.634,0,0,0,4.751,4.743,7.628,7.628,0,0,0,2.4,10.4a7.634,7.634,0,0,0,2.344,5.647A7.628,7.628,0,0,0,10.4,18.4a7.634,7.634,0,0,0,5.647-2.344A7.628,7.628,0,0,0,18.4,10.4a7.651,7.651,0,0,0-2.344-5.655M14.4,10.4v4.8H11.6v-4H9.2v4H6.4V10.4H4.8l5.6-5.6,6,5.6Z" transform="translate(-2.398 -2.398)" fill="#CCCCCC"/>
+  </g>
+</svg>

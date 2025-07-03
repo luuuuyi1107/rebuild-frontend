@@ -1,0 +1,46 @@
+@import "@/_theme/theme.scss";
+
+.remove-padding {
+  padding: 0 !important;
+}
+.promotion-center-page {
+  padding: 0;
+  &.with-tabs {
+    ul {
+      display: flex;
+      li {
+        flex: 1;
+      }
+    }
+  }
+  .record-list-item:active {
+    background: darken($background-color, 5);
+  }
+  .promotion-record-item {
+    padding-left: 0;
+    padding-right: 0;
+    .img-item {
+      width: 100%;
+      // aspect-ratio: 640/220;
+      aspect-ratio: 588 / 193;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      img {
+        width: 100%;
+      }
+    }
+    .title {
+      font-weight: bold;
+      color: #444;
+      font-size: 0.26rem;
+      line-height: 1.8;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+}

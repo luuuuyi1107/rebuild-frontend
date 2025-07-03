@@ -1,0 +1,27 @@
+@import "@/_theme/theme.scss";
+
+
+.empty_view_layout{
+  width: 100%;
+  height: 75%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.no_margin{
+    margin-top: 0;
+  }
+  img{
+    ///666*411的比例计算
+    width: 222px;
+    height: 137px;
+  }
+  div{
+    color: #9F9F9F;
+    font-size: 14px;
+    margin-top: 20px;
+
+  }
+}

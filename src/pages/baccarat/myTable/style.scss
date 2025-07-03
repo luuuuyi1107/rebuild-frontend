@@ -1,0 +1,132 @@
+@import "@/_theme/theme.scss";
+
+.invite-code-dialog{
+  .text-input{
+    border: 1px solid #CCC;
+    width: 3.2rem!important;
+    padding: .04rem .01rem;
+    border-radius: 2px;
+  }
+}
+
+.baccarat-myTable{
+  .page__background{
+    background-color: $background-color;
+  }
+  .table-content{
+    background-color: #FFF;
+    border-radius: 2px;
+    padding: .2rem 0;
+    .info{
+      padding: 0 .2rem;
+      margin: 0 auto;
+      line-height: .4rem;
+      .top{
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: row;
+          color: #1f1f21;
+          font-weight: bold;
+          align-items: center;
+          margin-bottom: .1rem;
+          .avatar{
+            width: .4rem;
+            height: .4rem;
+            font-size: .3rem;
+            text-align: center;
+            background: #dcddf1;
+            border-radius: 50%;
+            color: #fff;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            margin-right: .1rem;
+            .ons-icon{
+              vertical-align: 0%;
+            }
+          }
+        }
+        .middle{
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: .12rem;
+          span{
+            width: 50%;
+            padding: .02rem 0;
+          }
+        }
+      }
+    .click-btn{
+        width: 90%;
+        margin: .4rem auto;
+        span{
+          display: block;
+          padding: .2rem;
+          background: $primary-color;
+          text-align: center;
+          color: #fff;
+          border-radius: 3px;
+        }
+    }
+
+    .btn-box{
+      padding-top: .2rem;
+      display: flex;
+      justify-content: space-around;
+      .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: .1rem;
+        border-radius: 3px;
+        &:active{
+          background-color: $background-color;
+        }
+        span{
+          display: flex;
+          color: #444;
+          &.icon{
+            width: .9rem;
+            height: .9rem;
+            background: $primary-color;
+            color: #FFF;
+            font-size: .4rem;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: .16rem;
+          }
+        }
+      }
+    }
+  }
+  .empty{
+    width: 90%;
+    height: 1.6rem;
+    margin: 0 auto;
+    line-height: .6rem;
+    text-align: center;
+    background: #FFF;
+    border-radius: .1rem;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.1);
+    font-size: .32rem;
+    color: #666;
+    span{
+      display: block;
+      font-size: .26rem;
+      color: #CCC;
+      &:first-child{
+        font-size: .6rem;
+        color: #F0F0F0;
+        height: 1rem;
+        line-height: 1rem;
+      }
+    }
+    &:active{
+      background-color: lighten($background-color, 2);
+    }
+  }
+}
+

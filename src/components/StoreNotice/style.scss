@@ -1,0 +1,52 @@
+@import "../../_theme/theme.scss";
+.notice-module{
+  //background: $primary-color;
+  height: 25px;
+  line-height: 25px;
+  width: 100%;
+  overflow: hidden;
+  position:relative;
+  z-index: 9;
+  background: lighten($primary-color, 45);
+  &.noNotice{
+    display: none;
+  }
+  .noticeTitle{
+    position: absolute;
+    left: .25rem;
+    top: 0;
+    //font-size: 2rem;
+    //color: #ffffff;
+    .ons-icon{
+      vertical-align: 0;
+      font-size: .25rem;
+      color: #ff9a06;
+    }
+  }
+  .marquee {
+    position: relative;
+    margin-left:75px;
+    //font-size: .8rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    //color: #FFF;
+    height: 25px;
+    line-height: 25px;
+  }
+  .marquee span.noticeText {
+    position: absolute;
+    width: 100%;
+    font-weight: 500;
+    display: table;
+    line-height: 25px;
+    padding: 0 .25rem;
+    left: 0;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transition: top .2s ease-in-out 1s;
+    div{
+      width: 100%;
+    }
+  }
+}

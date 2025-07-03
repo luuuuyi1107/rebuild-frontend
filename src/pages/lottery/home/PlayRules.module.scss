@@ -1,0 +1,7 @@
+.refund {
+  @apply relative;
+  &:after {
+    @apply absolute right-0 top-0 border border-solid border-[#E14138] rounded-[0.05rem] text-[#E14138] text-[0.22rem] w-[13px] h-[13px] flex items-center justify-center font-bold;
+    content: "保";
+  }
+}

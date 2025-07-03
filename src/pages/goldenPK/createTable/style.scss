@@ -1,0 +1,138 @@
+@import "@/_theme/theme.scss";
+.golden-create-table {
+  .content {
+    padding: 0 0.2rem;
+    width: 90%;
+    margin: auto;
+  }
+  .item {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+    .inline {
+      margin-left: 0.2rem;
+      display: flex;
+      //width: 74%;
+      &:nth-child(1) {
+        //width: 1.2rem;
+        font-size: 0.26rem;
+      }
+      &:nth-child(2) {
+        flex: 1;
+      }
+    }
+  }
+  .tip {
+    width: 100%;
+    //padding-top: 0.3rem;
+    line-height: 0.4rem;
+    padding: 0.2rem;
+    color: #5690d5;
+    box-sizing: border-box;
+    p {
+      margin: 0;
+    }
+  }
+  .inputBox {
+    width: 100%;
+    margin: auto;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0;
+    border: none;
+    .ons-icon {
+      font-size: 0.4rem;
+      top: 0.3rem;
+      display: none;
+      &.subfix {
+        display: block;
+      }
+    }
+    ons-input input {
+      font-size: 0.26rem;
+      padding: 0;
+    }
+  }
+  .submit {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    .button {
+      width: 40%;
+      border: 1px solid $primary-color;
+      &:first-child {
+        background: #fff;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+  //.submit{
+  //  width: 100%;
+  //  text-align: center;
+  //  margin-top: 0.4rem;
+  //  .button{
+  //    width: 100%;
+  //  }
+  //}
+
+  .creat-info {
+    box-shadow: 0 0 5px rgba(132, 132, 132, 0.32);
+  }
+  .round-info {
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem 0;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    .poker-group {
+      background: url("/public/images/goldenPK/createTable/desk.png") top center no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      padding: 0.15rem 0;
+    }
+    .pokerItem {
+      display: flex;
+      color: #83ffdb;
+      line-height: 0.4rem;
+      &:first-child {
+        color: #1f1f21;
+        //border-right: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      .poker {
+        display: flex;
+        justify-content: center;
+        margin: 0.1rem 0;
+        .golden-poker-card {
+          border: 1px solid #777;
+          border-radius: 3px;
+          margin: 0 0.06rem;
+        }
+      }
+    }
+    .dian {
+      min-width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0.3rem;
+      .dianItem {
+        line-height: 0.6rem;
+        width: 100%;
+        text-align: center;
+        color: #83ffdb;
+      }
+    }
+    .p30 {
+      width: 33%;
+      justify-content: center;
+    }
+  }
+}

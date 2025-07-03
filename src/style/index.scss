@@ -1,0 +1,243 @@
+@use "@fortawesome/fontawesome-free/css/all";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ons-list-item.list-item {
+  display: flex;
+}
+
+/* 隐藏 Chrome, Safari, Edge 上的箭头 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 隐藏 Firefox 上的箭头 */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 前进动画：原始组件向左移出 5% 并淡出 0.025s，新组件从右淡入移入 0.2s */
+.slide-forward-enter {
+  opacity: 0; /* 新组件从透明开始 */
+  transform: translateX(100%); /* 新组件从右边开始 */
+  position: absolute; /* 使用 absolute 避免重叠 */
+  width: 100%; /* 确保新组件覆盖整个画面 */
+}
+
+.slide-forward-enter-active {
+  opacity: 1; /* 新组件淡入到完全不透明 */
+  transform: translateX(0); /* 新组件移到原始位置 */
+  transition: opacity 300ms ease, transform 300ms ease; /* 0.2s 动画，延迟 0.025s */
+  position: absolute;
+  width: 100%;
+}
+
+.slide-forward-exit {
+  @apply z-0;
+  // opacity: 1; /* 原始组件初始状态 */
+  // transform: translateX(0); /* 原始组件保持位置 */
+  // position: absolute; /* 保持在画面上 */
+  // width: 100%;
+  // z-index: 1000;
+}
+
+.slide-forward-exit-active {
+  // opacity: 0; /* 原始组件淡出 */
+  // transform: translateX(-100%); /* 原始组件向左移出 5% */
+  // transition: opacity 300ms ease, transform 300ms ease; /* 0.025s 移出并淡出 */
+  // position: absolute;
+  // width: 100%;
+}
+
+.slide-forward-appear {
+  opacity: 0; /* 初始载入时从透明开始 */
+  transform: translateX(-100%); /* 从右边进入 */
+}
+
+.slide-forward-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+/* 后退动画：原始组件向右移出 5% 并淡出 0.025s，新组件从左淡入移入 0.2s */
+.slide-back-enter {
+  opacity: 0; /* 新组件从透明开始 */
+  transform: translateX(-100%); /* 新组件从左边开始 */
+  position: absolute; /* 使用 absolute 避免重叠 */
+  width: 100%; /* 确保新组件覆盖整个画面 */
+}
+
+.slide-back-enter-active {
+  opacity: 1; /* 新组件淡入到完全不透明 */
+  transform: translateX(0); /* 新组件移到原始位置 */
+  transition: opacity 300ms ease, transform 300ms ease; /* 0.2s 动画，延迟 0.025s */
+  position: absolute;
+  width: 100%;
+}
+
+.slide-back-exit {
+  opacity: 1; /* 原始组件初始状态 */
+  transform: translateX(0); /* 原始组件保持位置 */
+  position: absolute; /* 保持在画面上 */
+  width: 100%;
+}
+
+.slide-back-exit-active {
+  opacity: 0; /* 原始组件淡出 */
+  transform: translateX(-100%); /* 原始组件向右移出 5% */
+  transition: opacity 300ms ease, transform 300ms ease; /* 0.025s 移出并淡出 */
+  position: absolute;
+  width: 100%;
+}
+
+.slide-back-appear {
+  opacity: 0; /* 初始载入时从透明开始 */
+  transform: translateX(-100%); /* 从左边进入 */
+}
+
+.slide-back-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.lift-appear {
+  // transform: translateY(100%);
+  @apply h-0;
+}
+
+.lift-appear-active {
+  @apply h-[226px];
+  // transform: translateY(0);
+  // transition: transform 300ms ease;
+  transition: height 300ms ease;
+}
+
+.lift2-appear {
+  // transform: translateY(100%);
+  @apply h-0;
+}
+
+.lift2-appear-active {
+  @apply h-[274px];
+  // transform: translateY(0);
+  // transition: transform 300ms ease;
+  transition: height 300ms ease;
+}
+
+/* 后退动画：原始组件向右移出 5% 并淡出 0.025s，新组件从左淡入移入 0.2s */
+.slide-room-enter {
+  opacity: 0; /* 新组件从透明开始 */
+  transform: translateX(100%); /* 新组件从左边开始 */
+  position: absolute; /* 使用 absolute 避免重叠 */
+  width: 100%; /* 确保新组件覆盖整个画面 */
+}
+
+.slide-room-enter-active {
+  opacity: 1; /* 新组件淡入到完全不透明 */
+  transform: translateX(0); /* 新组件移到原始位置 */
+  transition: opacity 300ms ease, transform 300ms ease; /* 0.2s 动画，延迟 0.025s */
+  position: absolute;
+  width: 100%;
+}
+
+.slide-room-exit {
+  opacity: 1; /* 原始组件初始状态 */
+  transform: translateX(0); /* 原始组件保持位置 */
+  position: absolute; /* 保持在画面上 */
+  width: 100%;
+}
+
+.slide-room-exit-active {
+  opacity: 0; /* 原始组件淡出 */
+  transform: translateX(100%); /* 原始组件向右移出 5% */
+  transition: opacity 300ms ease, transform 300ms ease; /* 0.025s 移出并淡出 */
+  position: absolute;
+  width: 100%;
+}
+
+.slide-room-appear {
+  opacity: 0; /* 初始载入时从透明开始 */
+  transform: translateX(100%); /* 从左边进入 */
+}
+
+.slide-room-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.none-exit {
+  z-index: 0;
+}
+
+.none-exit {
+  opacity: 1; /* 原始组件初始状态 */
+  transform: translateX(0); /* 原始组件保持位置 */
+  position: absolute; /* 保持在画面上 */
+  width: 100%;
+}
+
+.none-exit-active {
+  opacity: 0; /* 原始组件淡出 */
+  transform: translateX(-100%); /* 原始组件向右移出 5% */
+  transition: opacity 300ms ease, transform 300ms ease; /* 0.025s 移出并淡出 */
+  position: absolute;
+  width: 100%;
+}
+
+.none-enter + .slide-room-exit {
+  @apply hidden;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.theme-notification {
+  .alert-dialog {
+    @apply w-[321px];
+    background-color: inherit;
+  }
+  .alert-dialog-container {
+    @apply p-0 rounded-sm bg-white;
+  }
+  .alert-dialog-title {
+    @apply py-[10px] text-[16px] text-white bg-theme font-medium;
+  }
+  .alert-dialog-content {
+    @apply min-h-[103px] flex justify-center items-center p-[20px] text-[16px] bg-white text-gray-900;
+  }
+  .alert-dialog-footer {
+    @apply bg-white px-[12px] pb-[12px] flex gap-[10px] -mt-[1px];
+    .alert-dialog-button {
+      @apply rounded-[6px] text-theme border-theme border border-solid font-normal;
+      &.alert-dialog-button--primal {
+        @apply bg-theme text-white;
+        background-image: none;
+      }
+    }
+  }
+  &.prompt {
+    .alert-dialog-content {
+      @apply py-[24px] px-[12px] flex flex-col items-center justify-center;
+    }
+    .text-input {
+      @apply rounded-[5px] py-0.5 text-[16px] h-[42px] px-1;
+      margin-top: 16px !important;
+      border: 1px solid #ddd;
+    }
+    .text-input--material {
+      background: none !important;
+    }
+  }
+}

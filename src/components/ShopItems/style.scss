@@ -1,0 +1,23 @@
+.shop-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 10px;
+  padding-top: 0;
+  .item {
+    background-color: #fff;
+    img.itemImg {
+      width: 100%;
+    }
+    .title {
+      text-align: center;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: calc(33.3vw - 20px);
+      margin: 0 auto;
+      width: 180px;
+    }
+  }
+}

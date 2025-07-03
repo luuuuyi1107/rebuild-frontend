@@ -1,0 +1,30 @@
+@import "@/_theme/theme.scss";
+.site-set-pwd {
+  .content {
+    padding: 0 20px;
+  }
+
+  .submit {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4rem;
+    .button {
+      width: 100%;
+    }
+  }
+  .inputBox {
+    @apply h-[48px] m-0 first:mt-[10px];
+    .icon-box {
+      @apply ml-[12px] w-auto;
+    }
+    .subfix {
+      @apply right-[12px] top-1/2 translate-y-[-50%];
+    }
+    input {
+      @apply text-[14px] pl-[12px] ml-[3px] font-normal;
+      &::placeholder {
+        @apply text-[#AEAEAE] text-[14px];
+      }
+    }
+  }
+}

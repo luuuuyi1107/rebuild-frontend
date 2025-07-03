@@ -1,0 +1,18 @@
+node_modules/
+build/
+build-ddos/
+temp/*
+.idea/
+public/favicon.ico
+**/www/_theme/
+**/wap/_theme/
+.DS_Store
+src/wap/*
+# src/_theme/theme.scss
+src/_theme/theme.scss
+76c/
+ci/76_dev_update2.sh
+ci/76_dev_update3.sh
+*.zip
+web/
+.vite

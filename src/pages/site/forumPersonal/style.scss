@@ -1,0 +1,83 @@
+@import "@/_theme/theme.scss";
+
+.forum_personal {
+  .top_area {
+    background: url("/public/images/forumPersonal/personal_bg.png") no-repeat center;
+    width: 100%;
+    height: calc(100vw / (1125 / 711));
+    max-height: 40vh;
+
+    background-size: cover;
+    position: relative;
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      background: #ccc;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50px;
+      margin: auto;
+      border-radius: 8px;
+
+      .avatar_ic {
+        font-size: 53px;
+        color: white;
+        margin: auto;
+        text-align: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+      }
+    }
+
+    .name_info {
+      position: absolute;
+      top: 140px;
+      margin: auto;
+      color: white;
+      font-size: 14px;
+      right: 0;
+      left: 0;
+      text-align: center;
+    }
+
+    .donate_area {
+      position: absolute;
+      top: 170px;
+      margin: auto;
+      background: #00000033;
+      border-radius: 16px;
+      padding: 3px 10px;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 14px;
+
+      .price {
+        color: #ffe125;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .level {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+
+    .item {
+      flex: 1;
+      justify-content: space-evenly;
+      text-align: center;
+      font-weight: bold;
+      .title {
+        font-size: 16px;
+        color: black;
+      }
+    }
+  }
+}

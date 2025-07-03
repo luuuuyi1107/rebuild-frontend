@@ -1,0 +1,36 @@
+import classNames from "classnames"
+
+export default ({ setting, onClick = () => {} }) => {
+  return (
+    <div>
+      <div className="flex text-[15px]">
+        <div
+          className={classNames(`flex items-center px-[0.2rem] rounded-l-full rounded-r-full`, "bg-gray-50")}
+          style={{
+            color: setting.color.primary,
+          }}
+          onClick={onClick}
+        >
+          <svg className="w-[16px] mr-[0.125rem]" viewBox="0 0 10 12" fill={setting.color.primary} xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4 1.5C3.72386 1.5 3.5 1.72386 3.5 2V2.5H6.5V2C6.5 1.72385 6.27615 1.5 6 1.5H4ZM7.5 2.5V2C7.5 1.17158 6.82845 0.5 6 0.5H4C3.17157 0.5 2.5 1.17157 2.5 2V2.5H0.5C0.223858 2.5 0 2.72386 0 3C0 3.27614 0.223858 3.5 0.5 3.5H1V10C1 10.8284 1.67158 11.5 2.5 11.5H7.5C8.32844 11.5 9 10.8284 9 10V3.5H9.5C9.77614 3.5 10 3.27614 10 3C10 2.72386 9.77614 2.5 9.5 2.5H7.5ZM2 3.5V10C2 10.2762 2.22385 10.5 2.5 10.5H7.5C7.77616 10.5 8 10.2762 8 10V3.5H2Z"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6 5C6.27614 5 6.5 5.22386 6.5 5.5V8.5C6.5 8.77614 6.27614 9 6 9C5.72386 9 5.5 8.77614 5.5 8.5V5.5C5.5 5.22386 5.72386 5 6 5Z"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4 5C4.27614 5 4.5 5.22386 4.5 5.5V8.5C4.5 8.77614 4.27614 9 4 9C3.72386 9 3.5 8.77614 3.5 8.5V5.5C3.5 5.22386 3.72386 5 4 5Z"
+            />
+          </svg>
+          删除
+        </div>
+      </div>
+    </div>
+  )
+}

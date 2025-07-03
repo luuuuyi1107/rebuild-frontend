@@ -1,0 +1,27 @@
+
+.carousel-image-module {
+    position: relative;
+    .carousel-image{
+        width: 100%;
+    }
+    .nav-dot{
+        position: absolute;
+        height: .2rem;
+        width: 100%;
+        list-style: none;
+        bottom: 0;
+        text-align: center;
+        padding: 0;
+        li{
+            height: .15rem;
+            width: .15rem;
+            display: inline-block;
+            margin: .1rem;
+            background: rgba(255,255,255,.5);
+            border-radius: 50%;
+            &.on{
+                background: #FFF;
+            }
+        }
+    }
+}

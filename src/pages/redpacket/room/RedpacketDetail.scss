@@ -1,0 +1,187 @@
+@import "@/_theme/theme.scss";
+
+.redpacket-detail-page{
+    .toolbar__right{
+        span{
+            font-size: .26rem;
+            padding-right: .2rem;
+            color: #FFF;
+        }
+        &:active{
+            background-color: rgba(0,0,0,.1);
+        }
+    }
+    .packet-head{
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        .inner{
+          border-top: 1px solid transparent;
+          padding-bottom: .6rem;
+        }
+        .bg{
+          background: $primary-color;
+          position: absolute;
+          width: 24rem;
+          height: 24rem;
+          border-radius: 50%;
+          z-index: -1;
+          bottom: .2rem;
+          left: 50%;
+          margin-left: -12rem;
+          box-shadow: 1px 1px 1px #CCC;
+        }
+        .p1{
+          font-size: .32rem;
+          margin-top: .3rem;
+          margin-bottom: .1rem;
+          color: #f1ebbb;
+          font-weight: bold;
+          img{
+            border-radius: 2px;
+            vertical-align: middle;
+          }
+          .ons-icon{
+            vertical-align: 0;
+            margin-right: .04rem;
+            background: #b185a9;
+            padding: .02rem .06rem;
+            border-radius: 2px;
+            color: #FFF;
+          }
+        }
+        .my-amount{
+          color: #f1ebbb;
+          font-size: .48rem;
+          margin: 0;
+          font-weight: bold;
+        }
+        .p2{
+          font-size: .28rem;
+          color: #f1ebbb;
+          margin: 5px;
+        }
+      }
+      .packet-status{
+        height: .8rem;
+        line-height: .8rem;
+        padding: .06rem .3rem;
+        font-size: .28rem;
+        text-align: left;
+        color: #999;
+      }
+      
+      .empty{
+        .center{
+          background: none;
+          text-align: center;
+          color: #666;
+          font-size: .32rem;
+          p{
+            width: 100%;
+          }
+        }
+        .right{
+          background: none;
+        }
+        
+      }
+      .person-list{
+        color: #333;
+        &.god .center p{
+            color: red;
+        }
+        .left{
+          img{
+            width: .88rem;
+            height: .88rem;
+            border-radius: 3px;
+          }
+          .ion-person{
+            font-size: .56rem;
+            color: #666;
+            border: 1px solid #666;
+            border-radius: 50%;
+            width: .6rem;
+            height: .6rem;
+            text-align: center;
+            padding: .06rem;
+          }
+        }
+        .center{
+          p{
+            width: 100%;
+            font-size: .32rem;
+            margin: .1rem 0;
+            em{
+              display: inline-block;
+              padding: .02rem .1rem;
+              background: #f65c54;
+              color: #FFF;
+              font-weight:bold;
+              font-style: normal;
+              font-size: .24rem;
+              vertical-align: top;
+              margin-left: .1rem;
+              border-radius: 3px;
+            }
+            .green-label{
+              padding: .04rem .1rem;
+              color: #FFF;
+              font-size: .24rem;
+              vertical-align: bottom;
+              border-radius: 3px;
+              margin-left: .1rem;
+              background: #54A35F;
+            }
+          }
+          span{
+            color: #999;
+            margin-top: .04rem;
+          }
+        }
+        .right{
+          p{
+            width: 100%;
+            font-size: .36rem;
+            margin: 0;
+            height: .36rem;
+            line-height: .36rem;
+            .best-label{
+              padding: .04rem .1rem;
+              background: #ffd452;
+              color: #FFF;
+              font-size: .24rem;
+              vertical-align: bottom;
+              border-radius: 3px;
+              margin-right: .06rem;
+            }
+            .red-label{
+              background: #fc5e53;
+            }
+            .green-label{
+              background: #54A35F;
+            }
+          }
+          span{
+            .lei-icon{
+              fill: #666;
+            }
+          }
+        }
+        &.SYSTEM{
+          .left{
+            .ion-person{
+              color: #ccc;
+              border-color: #CCC;
+            }
+          }
+          .center{
+            p{
+              color: #999;
+            }
+          }
+        }
+        
+      }
+}

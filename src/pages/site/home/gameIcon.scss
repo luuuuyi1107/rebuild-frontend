@@ -1,0 +1,547 @@
+.game-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &.FFC5-icon {
+    background: url("/public/images/Home/lottery/ffc5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.FHCFX-icon {
+    background: url("/public/images/Home/lottery/FHCFX.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.SH11X5-icon {
+    background: url("/public/images/Home/lottery/sh11x5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.X51-icon {
+    background: url("/public/images/Home/lottery/x1.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.X55-icon {
+    background: url("/public/images/Home/lottery/x5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.AH11X5-icon {
+    background: url("/public/images/Home/lottery/ah11x5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.JS11X5-icon {
+    background: url("/public/images/Home/lottery/js11x5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.PK5-icon {
+    background: url("/public/images/Home/lottery/pk5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LHC3-icon {
+    background: url("/public/images/Home/lottery/lhc3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.BJK3-icon {
+    background: url("/public/images/Home/lottery/bjk3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.AHK3-icon {
+    background: url("/public/images/Home/lottery/ahk3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.SHK3-icon {
+    background: url("/public/images/Home/lottery/shk3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.JXK3-icon {
+    background: url("/public/images/Home/lottery/jxk3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.SF101-icon {
+    background: url("/public/images/Home/lottery/SF101.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.SF103-icon {
+    background: url("/public/images/Home/lottery/SF103.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.SF105-icon {
+    background: url("/public/images/Home/lottery/SF105.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.K31-icon {
+    background: url("/public/images/Home/lottery/K31.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.K33-icon {
+    background: url("/public/images/Home/lottery/K33.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.K35-icon {
+    background: url("/public/images/Home/lottery/K35.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.QXC-icon {
+    background: url("/public/images/Home/lottery/QXC.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.PL5SSC-icon {
+    background: url("/public/images/Home/lottery/PL5SSC.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.FFC-icon {
+    background: url("/public/images/Home/lottery/ffc.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.FFC3-icon {
+    background: url("/public/images/Home/lottery/ffc3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.FFCHC-icon {
+    background: url("/public/images/Home/lottery/FFCHC.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.BFCHC-icon {
+    background: url("/public/images/Home/lottery/BFCHC.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.PK10-icon {
+    background: url("/public/images/Home/lottery/pk10.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.PK3-icon {
+    background: url("/public/images/Home/lottery/pk3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LHC1-icon {
+    background: url("/public/images/Home/lottery/lhc1.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LHC5-icon {
+    background: url("/public/images/Home/lottery/lhc5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.X53-icon {
+    background: url("/public/images/Home/lottery/x3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LUCKY28-icon {
+    background: url("/public/images/Home/lottery/lucky28.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LHC-icon {
+    background: url("/public/images/Home/lottery/lhc.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.XYFT-icon {
+    background: url("/public/images/Home/lottery/xyft.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.AU5-icon {
+    background: url("/public/images/Home/lottery/au5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.AU10-icon {
+    background: url("/public/images/Home/lottery/au10.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.CQSSC-icon {
+    background: url("/public/images/Home/lottery/cqssc.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.XJSSC-icon {
+    background: url("/public/images/Home/lottery/xjssc.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.TJSSC-icon {
+    background: url("/public/images/Home/lottery/tjssc.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.BJPK10-icon {
+    background: url("/public/images/Home/lottery/bjpk10.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.GD11X5-icon {
+    background: url("/public/images/Home/lottery/gd11x5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.XJ-icon {
+    background: url("/public/images/Home/lottery/xj.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.JX11X5-icon {
+    background: url("/public/images/Home/lottery/jx11x5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.XJ11X5-icon {
+    background: url("/public/images/Home/lottery/xj11x5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.FARM-icon {
+    background: url("/public/images/Home/lottery/farm.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.GD10-icon {
+    background: url("/public/images/Home/lottery/gd10.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.TJ10-icon {
+    background: url("/public/images/Home/lottery/tj10.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.AU8-icon {
+    background: url("/public/images/Home/lottery/au8.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.BJ8-icon {
+    background: url("/public/images/Home/lottery/bj8.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.BJ28-icon {
+    background: url("/public/images/Home/lottery/bj28.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.JSK3-icon {
+    background: url("/public/images/Home/lottery/jsk3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.GXK3-icon {
+    background: url("/public/images/Home/lottery/gxk3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LHCMACAU-icon {
+    background: url("/public/images/Home/lottery/lhcmacau.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LHCSG-icon {
+    background: url("/public/images/Home/lottery/lhcsg.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LHCTW-icon {
+    background: url("/public/images/Home/lottery/lhctw.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HXSix-icon {
+    background: url("/public/images/Home/lottery/hxsix.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.FC3D-icon {
+    background: url("/public/images/Home/lottery/FC3D.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.PL3-icon {
+    background: url("/public/images/Home/lottery/PL3.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.KY-icon {
+    background: url("/public/images/Home/games/ky.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.LEG-icon {
+    background: url("/public/images/Home/games/leg.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.AG-icon {
+    background: url("/public/images/Home/games/ag.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.Baccarat-icon {
+    background: url("/public/images/Home/games/baccarat.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.GoldenPK-icon {
+    background: url("/public/images/Home/games/goldenPK.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.FistenPK-icon {
+    background: url("/public/images/Home/games/fistenPK.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.DicePK-icon {
+    background: url("/public/images/Home/games/dicePK.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.TB-icon {
+    background: url("/public/images/Home/games/tb.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.SB-icon {
+    background: url("/public/images/Home/games/sb.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.RED-icon {
+    background: url("/public/images/Home/games/redpacket.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.AB-icon {
+    background: url("/public/images/Home/games/ab.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.AE-icon {
+    background: url("/public/images/Home/games/ae.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.BBIN-icon {
+    background: url("/public/images/Home/games/bbin.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.BG-icon {
+    background: url("/public/images/Home/games/bg.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.CARD365-icon {
+    background: url("/public/images/Home/games/card365.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.CQ9-icon {
+    background: url("/public/images/Home/games/cq9.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.DS-icon {
+    background: url("/public/images/Home/games/ds.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.DT-icon {
+    background: url("/public/images/Home/games/dt.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.MG-icon {
+    background: url("/public/images/Home/games/mg.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.OG2-icon {
+    background: url("/public/images/Home/games/og2.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.YL-icon {
+    background: url("/public/images/Home/games/yl.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.ZH-icon {
+    background: url("/public/images/Home/games/zh.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.PT-icon {
+    background: url("/public/images/Home/games/pt.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.QT-icon {
+    background: url("/public/images/Home/games/qt.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.M8-icon {
+    background: url("/public/images/Home/games/m8.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HL-icon {
+    background: url("/public/images/Home/games/hl.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.KS-icon {
+    background: url("/public/images/Home/games/ks.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.JDB-icon {
+    background: url("/public/images/Home/games/jdb.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.IM-icon {
+    background: url("/public/images/Home/games/im.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HXBaccarat-icon {
+    background: url("/public/images/Home/baccarat/HXBaccarat.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HXBFPK10-icon {
+    background: url("/public/images/Home/lottery/HXBFPK10.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HXYFPK10-icon {
+    background: url("/public/images/Home/lottery/HXYFPK10.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HXXY5-icon {
+    background: url("/public/images/Home/lottery/HXXY5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HXXY10-icon {
+    background: url("/public/images/Home/lottery/HXXY10.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.NUI-icon {
+    background: url("/public/images/Home/games/niuniu.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HASHLUCK-icon {
+    background: url("/public/images/Home/games/hash-luck.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HASHHALF-icon {
+    background: url("/public/images/Home/games/hash-half.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.HASHONETEN-icon {
+    background: url("/public/images/Home/games/hash-one-ten.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.JOMSix-icon {
+    background: url("/public/images/Home/lottery/jomsix.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.KLSix-icon {
+    background: url("/public/images/Home/lottery/klsix.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.hxyf11x5-icon {
+    background: url("/public/images/Home/lottery/hxyf11x5.png") center no-repeat;
+    background-size: 100%;
+  }
+
+  &.PG-icon {
+    background: url("/public/images/Home/lottery/PG.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.BAOBEI-icon {
+    background: url("/public/images/Home/lottery/baobei.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.SPB-icon {
+    background: url("/public/images/Home/lottery/spb.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.WINGO1M-icon {
+    background: url("/public/images/Home/lottery/wingo1m.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.WINGOHALFM-icon {
+    background: url("/public/images/Home/lottery/wingohalfm.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.PM-icon {
+    background: url("/public/images/Home/games/pm.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.BOYA-icon {
+    background: url("/public/images/Home/games/boyafish.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.BOYACHESS-icon {
+    background: url("/public/images/Home/games/boya.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.DB-icon {
+    background: url("/public/images/Home/games/db.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.DBCardGame-icon {
+    background: url("/public/images/Home/games/dbchess.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.DBGame-icon {
+    background: url("/public/images/Home/games/DBSlot.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.FFANIMAL-icon {
+    background: url("/public/images/Home/games/ffanimal.png") center no-repeat;
+    background-size: 100%;
+  }
+  &.SFANIMAL-icon {
+    background: url("/public/images/Home/games/sfanimal.png") center no-repeat;
+    background-size: 100%;
+  }
+}

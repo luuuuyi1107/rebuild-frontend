@@ -1,0 +1,50 @@
+.electionStatus {
+  @apply bg-[#B4B4B4] leading-tight pt-[5px] pb-[2px] pl-[5px] pr-[20px] -translate-x-[14px] text-white relative flex items-center;
+  width: fit-content !important;
+  &::after {
+    @apply absolute right-0 top-0 block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top: 12px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 6px solid #f1f1f1;
+    border-left: 0px;
+  }
+}
+
+.active {
+  @apply bg-[#FF6B63];
+}
+
+.vote,
+.voteEnable {
+  @apply grid grid-cols-2 gap-0.5;
+}
+
+.voteEnable {
+  @apply grid-cols-1;
+}
+
+div.votebar,
+div.votebarActive {
+  @apply rounded py-[10px] px-1 text-[13px] leading-tight flex justify-between items-center cursor-pointer;
+}
+
+div.votebarActive {
+  @apply border-[1px] border-solid;
+}
+
+:global {
+  .is-elect-active {
+    .list-item__center,
+    .list-item__right {
+      background: none;
+    }
+    @apply bg-[#f1f1f1];
+    .list-item__center {
+      @apply border-b-[#fff] border-b-[1px] border-solid border-t-0 border-x-0;
+    }
+  }
+}

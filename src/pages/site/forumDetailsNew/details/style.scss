@@ -1,0 +1,554 @@
+@import "@/_theme/theme.scss";
+
+.forum_ticket_desc_new {
+  .top_bar {
+    margin: 14px;
+    display: flex;
+    flex-direction: row;
+
+    .left {
+      width: 52px;
+      height: 52px;
+    }
+
+    .center {
+      flex: 1;
+      margin-left: 14px;
+      margin-top: 4px;
+
+      .lotto_title {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .history_list {
+          color: #0062ff;
+          text-decoration: underline;
+          display: inline-block;
+          margin-left: 10px;
+          font-size: 12px;
+        }
+      }
+
+      .lotto_issue {
+        margin-top: 2px;
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .lotto_lower {
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 3px;
+        color: #f7ac04;
+
+        .trophy_win_ic {
+          color: #f7ac04;
+          //vertical-align: sub;
+          //line-height: 35px;
+          align-self: center;
+          margin-right: 6px;
+          font-size: 18px;
+        }
+
+        .top {
+          font-size: 14px;
+          color: #f7ac04;
+          margin-right: 6px;
+        }
+
+        .bottom {
+          color: #9f9f9f;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .donate_btn {
+        width: 43px;
+        // height: 55px;
+      }
+      .follow {
+        border: 2px solid #fbbe81;
+        font-weight: 600;
+        padding: 6px 9px;
+        border-radius: 5px;
+        color: #fbbe81;
+        font-size: 15px;
+        line-height: 1;
+        margin-left: 15px;
+        &.subscribed {
+          border: none;
+          background-color: #e8e8e8;
+          color: #a7a7a7;
+          padding: 9px 3px 9px 4px;
+        }
+      }
+    }
+  }
+
+  .block_lv {
+    height: 5px;
+    background: $divider;
+  }
+
+  .second_bar {
+    margin: 14px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    .lotto_method {
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+      align-self: center;
+      text-align: -webkit-center;
+
+      .issue {
+        width: 40px;
+        height: 20px;
+        background: #77bbfd;
+        border-radius: 2px;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+      }
+
+      .play-type {
+        font-size: 12px;
+        color: #c7cdcd;
+      }
+    }
+
+    .divider_vertical {
+      background: $divider;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 40px;
+      width: 1px;
+    }
+
+    .ticket_desc {
+      flex: 1;
+      font-size: 16px;
+      color: #1f1f21;
+      font-weight: bold;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .divider_horizon {
+    height: 1px;
+    background: $divider;
+  }
+
+  .title_bar_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 7px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+
+    .title_bg {
+      border-radius: 30px;
+      padding: 0 12px;
+      height: 26px;
+      line-height: 26px;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .recommend_box_ic {
+        vertical-align: baseline;
+        font-size: 17px;
+        margin-right: 3px;
+      }
+
+      .recommend_title {
+        font-size: 13px;
+        font-weight: 600;
+
+        color: #f77e04;
+        margin-left: 2px;
+      }
+    }
+
+    .bet_result {
+      margin-right: 15px;
+      width: 33px;
+      height: 33px;
+      line-height: 33px;
+      border: 1px solid #e80000;
+      background: #e80000;
+      text-align: center;
+      border-radius: 7px;
+      color: white;
+      font-size: 18px;
+
+      &.win {
+        border: 1px solid #e80000;
+        background: #e80000;
+        color: white;
+      }
+
+      &.lose {
+        background: #c9e5ad;
+        border: 1px solid #008000;
+        color: #008000;
+      }
+
+      &.tie {
+        background: #2860f6;
+        border: 1px solid #2860f6;
+        color: white;
+      }
+
+      &.waiting {
+        background-color: #e4690a;
+        color: #fff;
+      }
+    }
+  }
+
+  .recommend_area {
+    margin: 7px 14px;
+    margin-top: -22px;
+
+    border-radius: 10px;
+    background: #fffbec;
+    border: 1px solid #fff0cb;
+
+    padding: 14px 14px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    position: relative;
+
+    .recommend_box {
+      padding-top: 12px;
+      .bet_content {
+        flex: 1;
+        // color: $primary-color;
+        text-align: start;
+        font-size: 24px;
+        line-height: 1.2;
+        word-break: break-word;
+        font-weight: bold;
+        overflow-wrap: break-word;
+
+        // .bet-content-frame > div:nth-child(8n) {
+        //   flex: 1;
+        // }
+        .bet-content-list {
+          max-width: 450px;
+          &.number {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            > span {
+              white-space: nowrap;
+            }
+            @media only screen and (max-width: 350px) {
+              grid-template-columns: repeat(6, 1fr);
+            }
+            @media only screen and (max-width: 290px) {
+              grid-template-columns: repeat(4, 1fr);
+            }
+          }
+          &.text {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+
+        > span {
+          padding: 0 7px;
+          white-space: nowrap;
+        }
+        @media only screen and (max-width: 560px) {
+          font-size: 20px;
+        }
+      }
+
+      .bonus {
+        text-align: right;
+        line-height: 0.35rem;
+        font-size: 15px;
+        transform: translateY(17px);
+        span {
+          display: block;
+        }
+        .amount {
+          color: black;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .random_comment_box {
+    border-radius: 13px;
+    padding: 3px 21px;
+    vertical-align: sub !important;
+    display: flex;
+    align-items: center;
+
+    .recommend_title {
+      color: #f77e04;
+      font-size: 13px;
+      font-weight: 600;
+      margin-left: 3px;
+    }
+  }
+
+  .random_comment_box-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin-left: 38px;
+    margin-top: 4px;
+    margin-right: 18px;
+    color: #1f1f21;
+    font-size: 15px;
+  }
+
+  .reaction_box {
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    line-height: 45px;
+
+    .button_liked {
+      flex: 1;
+      text-align: center;
+      vertical-align: sub;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        margin-left: 7px;
+        font-size: 15px;
+      }
+    }
+
+    .divider_vertical {
+      height: 25px;
+      width: 1px;
+      background: $divider;
+      margin: auto;
+    }
+
+    .button_disliked {
+      flex: 1;
+      text-align: center;
+      vertical-align: sub;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        margin-left: 7px;
+        font-size: 15px;
+        color: #ded4d1;
+      }
+    }
+  }
+
+  .follow_panel {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+
+    .bet_follow_person {
+      flex: 1;
+      margin-left: 30px;
+
+      .title {
+        color: gray;
+        font-size: 15px;
+        margin-top: 7px;
+      }
+
+      .value {
+        color: black;
+        font-size: 15px;
+      }
+    }
+
+    .bet_follow_amount {
+      flex: 1;
+
+      .title {
+        margin-top: 7px;
+        color: gray;
+        font-size: 15px;
+      }
+
+      .value {
+        color: black;
+        font-size: 15px;
+      }
+    }
+
+    .ticket_action_btn {
+      width: 110px;
+      background: $primary-color;
+
+      text-align: center;
+      line-height: 59px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+
+      @media only screen and (max-width: 420px) {
+        width: 95px;
+        font-size: 16px;
+      }
+
+      .icon {
+      }
+
+      svg {
+      }
+
+      div {
+      }
+
+      &.getlist {
+        background: #6f97e2;
+      }
+
+      &.disable {
+        background: #cccccc;
+      }
+
+      &.follow {
+        background: #5cc7c0;
+      }
+
+      &.return {
+        margin-left: 3px;
+        background-color: #5cc7c0;
+      }
+    }
+  }
+
+  .history_record {
+    padding-bottom: 15px;
+    .title {
+      font-size: 18px;
+      margin-left: 18px;
+      margin-top: 14px;
+      margin-bottom: 3px;
+      font-weight: bold;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      padding: 8px 14px;
+      height: 26px;
+      line-height: 26px;
+      border-bottom: 1px solid $divider;
+      justify-content: space-between;
+
+      .issue {
+        font-size: 16px;
+        color: black;
+        padding-right: 15px;
+      }
+
+      .draw_bet {
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #e80000;
+        &.win {
+          color: #e80000;
+        }
+        &.lose {
+          color: #008000;
+        }
+        &.tie {
+          color: #2860f6;
+        }
+        &.not_yet {
+          color: #2860f6;
+        }
+      }
+
+      .draw_open_details {
+        font-size: 16px;
+        color: black;
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .result {
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        border: 1px solid #f77e04;
+        background: #ffebd6;
+        text-align: center;
+        border-radius: 7px;
+        color: #f77e04;
+        font-weight: 700;
+
+        &.win {
+          border: 1px solid #f77e04;
+          background: #ffebd6;
+          color: #f77e04;
+        }
+
+        &.lose {
+          background: #c9e5ad;
+          border: 1px solid #008000;
+          color: #008000;
+        }
+
+        &.tie {
+          background: #d8e7ff;
+          border: 1px solid #2860f6;
+          color: #2860f6;
+        }
+
+        &.not_yet {
+          background: #dbe9ff;
+          border: 1px solid #2860f6;
+          color: #2860f6;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.follow_bet_modal {
+  .modal-inner {
+  }
+}
+
+.donate_owner_modal {
+  .modal-inner {
+  }
+}

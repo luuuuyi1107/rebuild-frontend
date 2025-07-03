@@ -1,0 +1,26 @@
+.forum_ticket_record_list {
+  .user_area{
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+    margin-right: 18px;
+    align-items: center;
+
+    .name{
+      font-size: 15px;
+      color: #000000;
+      margin-left: 14px;
+
+    }
+    .block{
+      flex: 1;
+    }
+
+    .donate_btn{
+      width: 48px;
+      height: 55px;
+
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "@/_theme/theme.scss";
+
+.history {
+  width: 100%;
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .head {
+    background-color: #F77E04;
+    text-align: center;
+    display: flex;
+    justify-content: round;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 0;
+    > div {
+      width: 15vw;
+      padding: 0 10px;
+    }
+    .title {
+      flex: 1;
+    }
+    .close {
+      text-align: right;
+    }
+
+    .back-button {
+      color: #fff;
+      text-align: left;
+      .back-button__icon {
+        fill: #fff;
+      }
+    }
+
+  }
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    > div {
+      display: flex;
+      padding: 10px 0;
+      border-bottom: 1px solid #efefef;
+    }
+    .end, .loading {
+      justify-content: center;
+    }
+
+    .loading:before{
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      line-height: 20px;
+      margin: auto;
+      text-align: center;
+      font-weight: 300;
+      font-size: 12px;
+      box-sizing: border-box;
+      z-index: 2;
+      border: 4px solid #888; /* Light grey */
+      border-top: 4px solid #fff; /* Blue */
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+
+    .bet-item {
+      .title {
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .content {
+        text-indent: 1em;
+      }
+    }
+
+  }
+}
+.platform-pc {
+  .history {
+    max-width: 600px;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

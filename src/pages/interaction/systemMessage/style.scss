@@ -1,0 +1,122 @@
+@import "@/_theme/theme.scss";
+
+.system-message-page {
+  .tabs {
+    ul {
+      display: flex;
+      li {
+        flex: 1;
+        &:nth-child(2) {
+          position: relative;
+          //&:before{
+          //    content: '';
+          //    position: absolute;
+          //}
+          .messageNumber {
+            position: absolute;
+            right: 0;
+            display: inline-block;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0;
+            /* height: 0.78rem; */
+            bottom: 0;
+            margin: auto;
+            background: #ff4a4a;
+            color: #fff;
+            border-radius: 3px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .record-list-item {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    &:active {
+      background: $background-color;
+    }
+    .left {
+      p {
+        width: 52px;
+        span {
+          display: block;
+          line-height: 0.4rem;
+          color: #666;
+          white-space: nowrap;
+        }
+      }
+    }
+    .center {
+      > div {
+        width: 100%;
+      }
+      p.tl {
+        font-weight: bold;
+      }
+      p.dd {
+        width: 100%;
+        display: block;
+        @apply my-0;
+        // height: 0.36rem;
+        // line-height: 0.36rem;
+      }
+    }
+  }
+  .read .center p.tl {
+    color: #666;
+  }
+}
+.action-pop-menu-modal {
+  .menus {
+    width: 2.4rem;
+    line-height: 0.8rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    color: #333;
+    font-size: 0.26rem;
+    overflow: hidden;
+    .menu {
+      height: 0.8rem;
+      border-bottom: 1px solid #f1f1f1;
+      &:active {
+        background-color: #f1f1f1;
+      }
+      &:last-child {
+        border-bottom: 0 none;
+      }
+    }
+  }
+}
+.message-detail-modal {
+  .box {
+    text-align: left;
+    padding: 0 0.3rem;
+    .hd {
+      padding: 0.1rem;
+      border-bottom: 1px solid #f0f0f0;
+      h3 {
+        font-size: 0.32rem;
+        color: #333;
+        margin: 0.1rem 0;
+      }
+      p {
+        margin: 0.1rem 0;
+        font-size: 0.24rem;
+        color: #999;
+      }
+    }
+    .bd {
+      margin-top: 0.2rem;
+      color: #444;
+      font-size: 0.26rem;
+      line-height: 1.8;
+      @apply whitespace-normal;
+    }
+  }
+}

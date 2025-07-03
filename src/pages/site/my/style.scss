@@ -1,0 +1,204 @@
+@import "@/_theme/theme.scss";
+
+.site-my {
+  .redpacket-cuts {
+    font-family: Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    @apply bg-[#FFF2E1] flex items-center px-1 py-0.5 font-bold;
+    color: $primary-color;
+    .redpacket-btn,
+    .coupon-btn {
+      @apply text-white py-[4px] px-1 rounded-full font-normal flex items-center bg-theme;
+    }
+
+    .coupon-btn {
+      @apply bg-[#F93131];
+    }
+  }
+  .page__content {
+    padding-bottom: 0.88rem;
+  }
+  .toolbar.inverse {
+    background: $primary-color;
+  }
+  .userInfo {
+    background: $primary-color;
+    color: #fff;
+    font-size: 0.26rem;
+    padding-bottom: 0.2rem;
+    position: relative;
+    z-index: 0;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 0.6rem;
+      background: $primary-color;
+      position: absolute;
+      bottom: -0.6rem;
+      left: 0;
+    }
+  }
+  .top {
+    text-align: center;
+    padding: 0.2rem 0;
+    .user-icon {
+      margin-bottom: 8px;
+      display: block;
+    }
+    p {
+      margin: 0;
+      color: #ffffff;
+    }
+    .balance {
+      font-size: 0.26rem;
+      margin-top: 0.3rem;
+      span {
+        padding: 0.1rem 0.3rem;
+        border-radius: 25px;
+        background: rgba(0, 0, 0, 0.1);
+        .am-icon {
+          color: #fff;
+          fill: #fff;
+          vertical-align: -0.06rem;
+          margin-right: 0.04rem;
+        }
+        b {
+          color: #ffe125;
+          font-weight: bold;
+          font-size: 0.28rem;
+          vertical-align: -1px;
+        }
+      }
+    }
+  }
+  .total {
+    padding: 0 0.4rem;
+    margin: 0 0 0.2rem;
+    span {
+      &:nth-child(2) {
+        float: right;
+      }
+    }
+  }
+  .time {
+    padding: 0 0.4rem;
+    font-size: 0.24rem;
+    opacity: 0.6;
+    span {
+      &:nth-child(2) {
+        float: right;
+      }
+    }
+  }
+
+  .bankCard {
+    margin: 0 0 0.2rem;
+    z-index: 1;
+    position: relative;
+    .bank-item {
+      width: 75%;
+      min-height: 2, 7rem;
+      margin: auto;
+      padding: 0.2rem;
+      font-size: 0.26rem;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(80, 80, 80, 0.2);
+    }
+    .bankCardInfo {
+      position: relative;
+      &:before {
+        content: "";
+        width: 100%;
+        height: 0.3rem;
+        background: $second-color;
+        position: absolute;
+        top: 0.8rem;
+        left: 0;
+      }
+      .info {
+        width: 100%;
+        padding: 0;
+        display: inline-block;
+        &.bankName {
+          height: 1.3rem;
+          font-weight: bold;
+          .am-icon {
+            margin-right: 0.1rem;
+            vertical-align: -0.06rem;
+          }
+          .edit-bank-btn {
+            float: right;
+            font-size: 0.24rem;
+            padding: 0.04rem 0.1rem;
+            line-height: 0.36rem;
+          }
+        }
+        &.cardNum {
+          text-align: center;
+          font-size: 0.46rem;
+          font-weight: bold;
+          height: 0.9rem;
+        }
+        &.infoGroup {
+          div {
+            display: inline-block;
+            color: #444;
+          }
+          span {
+            color: #999;
+          }
+          .address {
+            float: right;
+          }
+        }
+      }
+    }
+    .addBankCard {
+      min-height: 2.62rem;
+      line-height: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+        text-align: center;
+        color: #666;
+        span {
+          text-decoration: underline;
+          color: $primary-color;
+        }
+      }
+      span {
+        vertical-align: 0;
+      }
+      .ons-icon {
+        font-size: 0.36rem;
+        color: #ccc;
+        vertical-align: -15%;
+      }
+    }
+  }
+
+  .memberContent {
+    font-size: 0.26rem;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    ons-col {
+      min-height: 1.4rem;
+      text-align: center;
+      margin: 0.1rem 0;
+      border-radius: 5px;
+      &:active {
+        background-color: $background-color;
+      }
+      .listIcon {
+        font-size: 0.52rem;
+      }
+      p {
+        margin: 0.16rem 0 0;
+      }
+    }
+  }
+}

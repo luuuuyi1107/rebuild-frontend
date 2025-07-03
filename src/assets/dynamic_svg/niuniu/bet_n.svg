@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="组_3519" data-name="组 3519" transform="translate(-11 -738)">
+    <circle id="椭圆_10" data-name="椭圆 10" cx="22" cy="22" r="22" transform="translate(11 738)" fill="#a091f4"/>
+    <!-- <text id="N" transform="translate(33 765)" fill="#fff" font-size="14" font-family="PingFangSC-Semibold, PingFang SC" font-weight="600"><tspan x="-5" y="0">N</tspan></text> -->
+    <g id="椭圆_22" data-name="椭圆 22" transform="translate(13 740)" fill="none" stroke="#dbd5ff" stroke-width="1" stroke-dasharray="3 3">
+      <circle cx="20" cy="20" r="20" stroke="none"/>
+      <circle cx="20" cy="20" r="19.5" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+@import "@/_theme/theme.scss";
+
+.third-game-transferRecord {
+  .page__content {
+    padding-bottom: 1rem;
+  }
+  .box {
+    margin: 0 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    .game-item {
+      padding: 0.2rem 0;
+      p {
+        margin: 0 0.1rem;
+      }
+      img {
+        width: 100%;
+      }
+      .name {
+        margin: 0.06rem 0;
+        text-align: center;
+      }
+    }
+    &.ky,
+    &.le {
+      .game-item {
+        &:first-child {
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+          .name {
+            display: none;
+          }
+        }
+        .img {
+          text-align: center;
+        }
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,263 @@
+@import "@/_theme/theme.scss";
+
+.tema_modal {
+  .modal-inner {
+    background: url("/public/images/LotteryPage/modal_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 320px;
+    height: calc(320px / (918 / 1443));
+
+    @media screen and (max-width: 320px) {
+      //588 × 202
+      width: 80vw;
+      //height: 503px;
+      height: calc(80vw / (918 / 1443));
+    }
+
+    margin: auto;
+    position: relative;
+    padding: 14px 14px;
+    display: block;
+
+    .modal_title_type {
+      color: white;
+      font-size: 20px;
+      padding-left: 8px;
+      padding-top: 7px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .modal_desc_type {
+      color: white;
+      font-size: 18px;
+      padding-left: 8px;
+      text-align: left;
+    }
+
+    .modal_title_img {
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 121px;
+      height: 89px;
+      position: absolute;
+      top: 10px;
+      right: -12px;
+    }
+
+    .number_title {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: 55px;
+
+      .pl {
+        font-size: 15px;
+        color: #2c3e50;
+        font-weight: bold;
+        margin-left: 50px;
+      }
+
+      .fd {
+        margin-left: 80px;
+        font-size: 15px;
+        color: #2c3e50;
+        font-weight: bold;
+      }
+    }
+
+    .number_list {
+      overflow: auto;
+
+      max-height: 300px;
+      @media screen and (max-width: 320px) {
+        max-height: 34vh;
+      }
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .number_row {
+        display: flex;
+        position: relative;
+        -webkit-box-align: center;
+        align-items: center;
+        justify-content: space-around;
+        vertical-align: middle;
+        margin-top: 12px;
+
+        .pl {
+          font-size: 13px;
+          color: gray;
+          width: 0.9rem;
+        }
+
+        .amt {
+          flex: 1;
+          padding-left: 7px;
+          padding-right: 7px;
+          height: 0.63rem;
+
+          border: 1px solid #ddd;
+          text-align: center;
+          color: #666;
+          font-size: 17px;
+
+          input {
+            border: none;
+
+            line-height: 0.63rem;
+
+            background: transparent;
+          }
+        }
+
+        .del {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          object-fit: contain;
+          object-position: center;
+          top: -5px;
+          right: -5px;
+          padding-left: 10px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    .bottom-bar {
+      background: #f9dbd71a;
+      height: 60px;
+      position: absolute;
+      bottom: 7px;
+      left: 0;
+      right: 0;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      border-bottom-left-radius: 26px;
+      border-bottom-right-radius: 26px;
+      margin-left: 9px;
+      margin-right: 9px;
+
+      .cancel {
+        flex: 1;
+        -ms-flex-item-align: center;
+        align-self: center;
+        color: #b2b2b2;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .confirm {
+        flex: 1;
+        text-align: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        color: #ff3e3e;
+        font-size: 15px;
+      }
+
+      .divider {
+        height: 38px;
+        width: 1px;
+        background: #dddddd;
+        margin: auto;
+      }
+    }
+  }
+
+  .ball {
+    width: 0.62rem;
+    height: 0.62rem;
+    min-width: 0.62rem;
+    min-height: 0.62rem;
+    line-height: 0.62rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    color: $primary-color;
+    font-size: 0.3rem;
+    font-weight: bold;
+
+    p {
+      height: 0.72rem;
+      line-height: 0.72rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    &.active {
+      background-color: $primary-color;
+      color: #ffffff;
+      border-color: $primary-color;
+    }
+
+    &.red {
+      color: #d32626;
+
+      &.active {
+        background-color: #d32626;
+        border-color: #d32626;
+        color: #ffffff;
+      }
+    }
+
+    &.blue {
+      color: #3232fb;
+
+      &.active {
+        background-color: #3232fb;
+        border-color: #3232fb;
+        color: #ffffff;
+      }
+    }
+
+    &.green {
+      color: #26a126;
+
+      &.active {
+        background-color: #26a126;
+        border-color: #26a126;
+        color: #ffffff;
+      }
+    }
+
+    &.rect {
+      border-radius: 4px;
+      height: 0.88rem;
+      width: 88%;
+      border-color: #ececec;
+
+      .p1 {
+        height: 0.88rem;
+        line-height: 0.88rem;
+      }
+
+      &.with-odds {
+        .p1 {
+          height: 0.52rem;
+          line-height: 0.52rem;
+        }
+
+        .p2 {
+          height: 0.36rem;
+          line-height: 0.36rem;
+          font-size: 0.24rem;
+          color: #666;
+          font-weight: normal;
+          white-space: nowrap;
+        }
+      }
+
+      &.active {
+        .p2 {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

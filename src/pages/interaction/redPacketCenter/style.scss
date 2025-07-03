@@ -1,0 +1,138 @@
+@import "@/_theme/theme.scss";
+
+.interaction-redPacketCenter {
+  .page__background {
+    background-color: #f4f5f9;
+  }
+  &.with-tabs {
+    .tabs ul {
+      display: flex;
+
+      li {
+        @apply flex-1 text-[14px];
+      }
+    }
+  }
+  .record-list-item {
+    @apply p-1 m-0 mb-1 bg-white;
+  }
+  .red-packet-record-item {
+    @apply p-0 m-0 bg-white text-[14px];
+    line-height: 0.4rem;
+
+    .item {
+      @apply mb-[5px] last:mb-0;
+      color: #666;
+
+      &.title {
+        color: #383737;
+        margin-bottom: 0.1rem;
+
+        .clickBtn {
+          @apply float-right underline;
+        }
+      }
+    }
+
+    .receive {
+      @apply w-full text-white text-[16px] h-[44px] justify-center items-center inline-flex bg-theme font-[500] rounded-[6px];
+      margin: 0.2rem 0 0;
+      display: flex;
+      &.disabled {
+        background-color: lighten($primary-color, 30);
+      }
+    }
+
+    .bd {
+      img {
+        width: 100%;
+      }
+
+      .mainTitle {
+        font-size: 0.35rem;
+        color: #f54;
+      }
+
+      .subTitle {
+        list-style-type: circle;
+        font-size: 0.3rem;
+        text-indent: 0.15rem;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 3px;
+          height: 3px;
+          border-radius: 100%;
+          background: red;
+          left: 0;
+          top: 0.21rem;
+        }
+      }
+
+      .line {
+        height: 1px;
+        background-color: #ddd;
+        margin: 5px 0;
+      }
+
+      .active a {
+        border: 1px solid #ccc;
+        padding: 4px 5px;
+        border-radius: 2px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.red-packet-detail {
+  line-height: 0.4rem;
+  color: #666;
+
+  .detail-item {
+    .date {
+      margin-bottom: 0.1rem;
+    }
+  }
+}
+
+.red-packet-receive {
+  color: #666;
+  line-height: 0.4rem;
+
+  .date {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.loaded {
+  .record-page .record-list-item:nth-child(2) {
+    .red-packet-record-item {
+      &.flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      &.puzzle {
+        min-height: 348px;
+      }
+    }
+
+    .yidun--icon_point,
+    .yidun--point,
+    .yidun--float {
+      .yidun_control {
+        margin-top: 200px !important;
+      }
+
+      &.yidun--button {
+        .yidun_control {
+          margin-top: 0px !important;
+        }
+      }
+    }
+  }
+}

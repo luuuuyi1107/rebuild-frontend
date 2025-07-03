@@ -1,0 +1,829 @@
+@import "@/_theme/theme.scss";
+
+ons-alert-dialog.messageEffect {
+  .alert-dialog {
+    background: rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+    .alert-dialog-container {
+      padding: 0;
+      .alert-dialog-title,
+      .alert-dialog-content {
+        display: none;
+      }
+      .alert-dialog-footer {
+        .alert-dialog-button {
+          display: inline-block;
+          width: 33.3%;
+          color: #fff;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 50%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            background: #777;
+          }
+          &:last-child:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.effect-menu-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  .effect-menus {
+    width: 270px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 8px;
+    .effect-menu {
+      width: 33%;
+      height: 100%;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      line-height: 45px;
+      font-size: 0.3rem;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 50%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background: #777;
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.http-chat-room-page {
+  .toolbar__right {
+    span {
+      font-size: 0.26rem;
+      padding-right: 0.2rem;
+      color: #fff;
+    }
+    &:active {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  .chat-content {
+    background: #f9f9f9;
+    padding-bottom: 1rem;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+  .ft {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    .ft-quote {
+      padding: 8px 25px 8px 15px;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.65);
+      color: #fff;
+      position: relative;
+      .quoteCancel {
+        position: absolute;
+        display: inline-block;
+        right: 8px;
+        top: 8px;
+        width: 16px;
+        height: 16px;
+        background: url("/public/images/HttpChatPage/close.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+    .ft-share {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background: #f0f0f0;
+      .share {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+        margin: 5px 0 0 10px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .action-input {
+      background: #f1f1f1;
+      border-top: 1px solid #e8e8e8;
+      height: 1rem;
+      .left {
+        text-align: center;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: 0.14rem;
+          padding: 0.1rem;
+          fill: #333;
+          &.disabled {
+            fill: #999;
+          }
+          &:active {
+            background-color: #ccc;
+          }
+        }
+        .emoji-panel {
+          width: 5.6rem;
+          position: absolute;
+          bottom: 1.2rem;
+          background: #fff;
+          border: 1px solid #e8e5e5;
+          font-size: 0.48rem;
+          left: 0.2rem;
+          padding: 0.1rem 0.2rem;
+          box-shadow: 1px 2px 2px #e6e3e3;
+          text-align: left;
+          span {
+            padding: 2px 3px;
+            margin-top: 0;
+          }
+        }
+      }
+      .center {
+        ons-input {
+          width: 100%;
+          background: #fff;
+          height: 0.8rem;
+          margin-top: 0.1rem;
+          border-radius: 0.1rem;
+          input {
+            height: 0.8rem;
+            padding: 0.04rem 0.16rem;
+          }
+        }
+      }
+      .right {
+        text-align: center;
+        span {
+          display: inline-block;
+          margin-top: 0.2rem;
+          width: 0.6rem;
+          height: 0.6rem;
+          fill: #f34e4e;
+          &.disabled {
+            fill: #666;
+          }
+        }
+
+        ons-button {
+          margin-top: 0.1rem;
+        }
+      }
+    }
+  }
+}
+
+//聊天内容样式
+.chat-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  .chat_msg {
+    display: block;
+    position: relative;
+    .user-info {
+      text-align: center;
+      display: block;
+      position: absolute;
+      top: 0.1rem;
+      width: 0.8rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      border-radius: 0.1rem;
+      .systemAvatar {
+        height: 0.8rem;
+        width: 0.8rem;
+        background: url("/public/images/HttpChatPage/service.png") no-repeat center;
+        background-size: contain;
+        border-radius: 5px;
+      }
+      .user-icon {
+        display: block;
+        font-size: 0.6rem;
+        height: 0.8rem;
+        width: 0.8rem;
+        text-align: center;
+        //background: #CCC;
+        color: #fff;
+        .ons-icon {
+          vertical-align: -10%;
+        }
+      }
+      .user-name {
+        display: block;
+        font-size: 0.24rem;
+        text-align: center;
+        color: #666;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 0.04rem;
+        word-break: break-all;
+        white-space: nowrap;
+      }
+    }
+    .message-body {
+      min-height: 1.6rem;
+      padding-left: 1.3rem;
+      padding-right: 0.7rem;
+      .gbzy {
+        color: red;
+      }
+
+      .hongbao-img {
+        //background: url('./images/hongbao.png');
+        width: 64px;
+        aspect-ratio: 204/288;
+        //background-size: cover;
+      }
+
+      .red {
+        color: #bd0904;
+      }
+      .strong {
+        font-weight: bold;
+      }
+
+      label.user-name {
+        position: absolute;
+        color: #999;
+      }
+      p {
+        display: inline-block;
+        padding: 0.2rem;
+        border-radius: 0.1rem;
+        border: 1px solid #e8e8e8;
+        position: relative;
+        color: #444;
+        font-size: 0.28rem;
+        background: #fff;
+        text-align: left;
+        margin: 0.4rem 0 0.1rem 0;
+        word-break: break-all;
+        &::before {
+          content: "";
+          width: 0;
+          height: 0;
+          border: 0.2rem solid;
+          border-color: #e8e8e8 transparent transparent transparent;
+          position: absolute;
+          transform: rotate(90deg);
+        }
+        &::after {
+          content: "";
+          width: 0;
+          height: 0;
+          border: 0.2rem solid;
+          border-color: #fff transparent transparent transparent;
+          position: absolute;
+          transform: rotate(90deg);
+        }
+        img {
+          max-width: 2.4rem;
+          max-height: 2.4rem;
+        }
+      }
+
+      .systemMessage {
+        .red {
+          color: red;
+        }
+        .strong {
+          font-weight: bold;
+        }
+      }
+    }
+    &.left {
+      .user-info {
+        left: 0.2rem;
+      }
+      .message-body {
+        label.user-name {
+          left: 1.3rem;
+        }
+        p {
+          &::before {
+            left: -0.4rem;
+            top: 0.15rem;
+          }
+          &::after {
+            left: -0.38rem;
+            top: 0.15rem;
+          }
+          .quote {
+            display: block;
+            padding: 8px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #eee;
+            font-style: italic;
+            .quote-content {
+              display: block;
+              color: #666;
+            }
+            .quote-info {
+              margin-top: 8px;
+              display: block;
+              color: #bbb;
+              font-size: 0.22rem;
+              span {
+                margin-right: 8px;
+              }
+            }
+          }
+          .shareBet {
+            display: inline-block;
+            .shareBetTitle {
+              display: inline-block;
+              width: 100%;
+              background: rgba(246, 126, 32, 0.8);
+              color: #fff;
+              padding: 5px 8px;
+              box-sizing: border-box;
+              border-radius: 3px;
+              span {
+                &:first-child {
+                  float: left;
+                }
+                &:last-child {
+                  float: right;
+                }
+              }
+            }
+            .shareBetContent {
+              display: inline-block;
+              width: 100%;
+              padding: 5px 8px;
+              box-sizing: border-box;
+              font-size: 0.24rem;
+              .info {
+                display: inline-block;
+                width: 100%;
+                line-height: 0.38rem;
+                padding: 3px 0;
+                span {
+                  &:first-child {
+                    float: left;
+                    vertical-align: middle;
+                    //background: #df4f4f;
+                    //color: #fff;
+                    padding: 0 5px;
+                    border-radius: 3px;
+                  }
+                  &:nth-child(2) {
+                    float: left;
+                    vertical-align: middle;
+                    margin-left: 8px;
+                  }
+                  &:last-child {
+                    float: right;
+                    vertical-align: middle;
+                    color: #df4f4f;
+                  }
+                }
+              }
+              .status {
+                display: inline-block;
+                width: calc(100% - 45px);
+                padding: 3px 5px;
+                line-height: 22px;
+              }
+              .followBet {
+                display: inline-block;
+                width: 35px;
+                //padding: 3px 5px ;
+                line-height: 22px;
+                background: #df4f4f;
+                color: #fff;
+                margin-top: 10px;
+                border-radius: 3px;
+                text-align: center;
+              }
+            }
+          }
+          .shareWin {
+            display: inline-block;
+            width: 100%;
+            .shareWinTitle {
+              display: inline-block;
+              width: 100%;
+              background: rgba(246, 126, 32, 0.8);
+              color: #fff;
+              padding: 5px 8px;
+              box-sizing: border-box;
+              border-radius: 3px;
+              margin-bottom: 5px;
+              span {
+                &:first-child {
+                  float: left;
+                  margin-right: 8px;
+                }
+                &:last-child {
+                  margin-left: 8px;
+                  float: right;
+                }
+              }
+            }
+            .shareWinContent {
+              display: flex;
+              width: 100%;
+              justify-content: space-around;
+              .shareWinItem {
+                display: inline-block;
+                min-height: 70px;
+                min-width: 60px;
+                text-align: center;
+                line-height: 30px;
+                vertical-align: middle;
+                padding: 5px;
+                box-sizing: border-box;
+                color: #fff;
+                margin: 0 3px;
+                border-radius: 2px;
+                span {
+                  display: block;
+                }
+                .number {
+                  background: rgba(255, 255, 255, 0.3);
+                  border-radius: 2px;
+                  // padding: 0 5px;
+                  @apply px-[5px] py-[6px] leading-tight;
+                }
+                .text {
+                }
+
+                &:nth-child(1) {
+                  background: #70c0f8;
+                }
+                &:nth-child(2) {
+                  background: #ff9f25;
+                }
+                &:nth-child(3) {
+                  background: #fd6b6f;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.right {
+      .user-info {
+        right: 0.2rem;
+      }
+      .message-body {
+        label.user-name {
+          right: 1.3rem;
+          display: none;
+        }
+        text-align: right;
+        padding-right: 1.3rem;
+        padding-left: 0.7rem;
+        p {
+          background-color: $primary-color;
+          color: #fff;
+          margin-top: 0.14rem;
+          border-color: $primary-color;
+          &::before {
+            right: -0.4rem;
+            top: 0.15rem;
+            transform: rotate(270deg);
+            border-color: $primary-color transparent transparent transparent;
+          }
+          &::after {
+            right: -0.38rem;
+            top: 0.15rem;
+            transform: rotate(270deg);
+            border-color: $primary-color transparent transparent transparent;
+          }
+
+          &.shareType {
+            padding: 0.03rem;
+          }
+
+          .quote {
+            display: block;
+            padding: 8px;
+            margin-bottom: 8px;
+            //background: rgba(0,0,0,.15);
+            border-bottom: 1px solid #e9cea7;
+            font-style: italic;
+            //border-radius: 3px;
+            .quote-content {
+              display: block;
+              color: #eee;
+            }
+            .quote-info {
+              display: block;
+              color: #f0d8b3;
+              font-size: 0.22rem;
+              margin-top: 8px;
+              span {
+                margin-right: 8px;
+              }
+            }
+          }
+
+          .shareBet {
+            display: inline-block;
+            background: #fff;
+            border-radius: 3px;
+            color: #000;
+            .shareBetTitle {
+              display: inline-block;
+              width: 100%;
+              //background: rgba(246, 126, 32, .8);
+              //color: #fff;
+              padding: 5px 8px;
+              box-sizing: border-box;
+              //border-radius: 3px;
+              border-bottom: 1px solid rgba(246, 126, 32, 0.75);
+              span {
+                &:first-child {
+                  float: left;
+                }
+                &:last-child {
+                  float: right;
+                }
+              }
+            }
+            .shareBetContent {
+              display: inline-block;
+              width: 100%;
+              padding: 5px 8px;
+              box-sizing: border-box;
+              font-size: 0.24rem;
+              .info {
+                display: inline-block;
+                width: 100%;
+                line-height: 0.38rem;
+                padding: 3px 0;
+                span {
+                  &:first-child {
+                    float: left;
+                    vertical-align: middle;
+                    //background: #df4f4f;
+                    //color: #fff;
+                    padding: 0 5px;
+                    border-radius: 3px;
+                  }
+                  &:nth-child(2) {
+                    float: left;
+                    vertical-align: middle;
+                    margin-left: 8px;
+                  }
+                  &:last-child {
+                    float: right;
+                    vertical-align: middle;
+                    color: #df4f4f;
+                  }
+                }
+              }
+              .status {
+                display: inline-block;
+                width: 100%;
+                padding: 3px 5px;
+                line-height: 22px;
+              }
+              .followBet {
+                display: inline-block;
+                width: 100%;
+                padding: 3px 0;
+                line-height: 22px;
+                background: #df4f4f;
+                color: #fff;
+                margin-top: 10px;
+                border-radius: 3px;
+                text-align: center;
+              }
+            }
+          }
+
+          .shareWin {
+            width: 100%;
+            padding: 0.15rem;
+            display: inline-block;
+            background: #fff;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 3px;
+            .shareWinTitle {
+              display: inline-block;
+              width: 100%;
+              background: rgba(246, 126, 32, 0.8);
+              color: #fff;
+              padding: 5px 8px;
+              box-sizing: border-box;
+              border-radius: 3px;
+              margin-bottom: 5px;
+              span {
+                &:first-child {
+                  float: left;
+                  margin-right: 8px;
+                }
+                &:last-child {
+                  margin-left: 8px;
+                  float: right;
+                }
+              }
+            }
+            .shareWinContent {
+              display: flex;
+              width: 100%;
+              justify-content: space-around;
+              .shareWinItem {
+                display: inline-block;
+                min-height: 70px;
+                min-width: 60px;
+                text-align: center;
+                line-height: 30px;
+                vertical-align: middle;
+                padding: 5px;
+                box-sizing: border-box;
+                color: #fff;
+                margin: 0 3px;
+                border-radius: 2px;
+                span {
+                  display: block;
+                }
+                .number {
+                  background: rgba(255, 255, 255, 0.3);
+                  border-radius: 2px;
+                  padding: 0 5px;
+                }
+                .text {
+                }
+
+                &:nth-child(1) {
+                  background: #70c0f8;
+                }
+                &:nth-child(2) {
+                  background: #ff9f25;
+                }
+                &:nth-child(3) {
+                  background: #fd6b6f;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .spliter {
+    font-size: 0.24rem;
+    color: #999;
+    border-bottom: 0px solid #f0f0f0;
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    span {
+      padding: 0.02rem 0.1rem;
+      background: #e1e1e1;
+      border-radius: 0.06rem;
+    }
+  }
+
+  .loading,
+  .no-more {
+    margin: 0;
+    text-align: center;
+    p {
+      color: #999;
+      font-size: 0.24rem;
+      .ons-icon {
+        font-size: 0.32rem;
+        vertical-align: -15%;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+    }
+  }
+}
+
+.chat-content {
+  .follow-bet-modal {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    .follow-bet-window {
+      @apply max-w-[460px] min-w-[320px];
+
+      .follow-bet-title {
+        width: 100%;
+        display: flex;
+        //height: 15%;
+        padding: 0.2rem;
+        font-size: 0.33rem;
+        font-weight: bold;
+        text-align: center;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        background: $primary-color;
+        color: #fff;
+        border-radius: 8px 8px 0 0;
+      }
+      .follow-bet-content {
+        // display: flex;
+        width: 100%;
+        //height: 60%;
+        background: #fff;
+        padding: 0.4rem 0.2rem;
+        // flex-wrap: wrap;
+        // justify-content: space-around;
+        .follow-bet-list {
+          width: 100%;
+          justify-content: space-around;
+          display: flex;
+          padding: 0.05rem 0;
+          div {
+            width: 33%;
+          }
+        }
+        .follow-bet-all-amount {
+          width: 100%;
+          margin-top: 0.2rem;
+          justify-content: space-around;
+          display: flex;
+          flex-wrap: wrap;
+          font-weight: bold;
+          align-items: center;
+          > div {
+            width: 50%;
+            justify-content: center;
+            display: flex;
+          }
+          .betAmount {
+            flex-wrap: wrap;
+            align-items: center;
+            width: 70%;
+            .inputBox {
+              width: 50%;
+              padding: 0;
+              margin: 0;
+              input {
+                text-align: center;
+              }
+            }
+          }
+          .allAmount {
+            width: 30%;
+            //justify-content: flex-end;
+          }
+        }
+      }
+      .follow-bet-btn {
+        @apply flex p-[12px] w-full bg-white gap-[12px] rounded-b-[6px];
+        div.submit,
+        div.cancel {
+          @apply flex-1 text-[16px] text-theme border-theme border-[1px] border-solid rounded-[6px] h-[44px] flex justify-center items-center font-[400];
+        }
+        div.submit {
+          @apply bg-theme text-white;
+        }
+      }
+    }
+  }
+}

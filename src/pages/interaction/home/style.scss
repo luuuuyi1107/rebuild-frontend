@@ -1,0 +1,73 @@
+@import "@/_theme/theme.scss";
+
+.interaction-home {
+  .list {
+    background-image: none;
+    padding-bottom: 0.6rem;
+  }
+
+  .list-item {
+    padding: 0 0.2rem;
+
+    &:active {
+      background-color: $background-color;
+    }
+
+    .left {
+      background-image: none;
+      font-size: 0.64rem;
+      position: relative;
+      border-bottom: 1px solid #f1f1f1;
+      padding-left: 0.2rem;
+      min-width: 52px;
+
+      .count {
+        position: absolute;
+        font-size: 0.24rem;
+        height: 0.32rem;
+        width: 0.32rem;
+        line-height: 0.32rem;
+        text-align: center;
+        background-color: #f00;
+        border-radius: 3px;
+        color: #fff;
+        top: 0.2rem;
+        right: 0.06rem;
+      }
+    }
+
+    .center {
+      background-image: none;
+      border-bottom: 1px solid #f1f1f1;
+
+      .title {
+        @apply block m-0 text-14px text-[#333] leading-none;
+      }
+
+      .text {
+        @apply leading-none text-12px;
+        margin: 8px 0 0;
+        color: #666;
+      }
+    }
+
+    .right {
+      background-image: none;
+      border-bottom: 1px solid #f1f1f1;
+      font-size: 0.36rem;
+      color: #999;
+    }
+  }
+
+  .list-item__center {
+    @apply p-0 py-12px min-h-[0.88rem];
+  }
+
+  .list-item__left {
+    @apply p-12px;
+
+    > div {
+      @apply w-26px;
+    }
+  }
+}

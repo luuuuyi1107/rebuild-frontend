@@ -1,0 +1,23 @@
+
+@import "@/_theme/theme.scss";
+
+.user-status{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.1rem;
+    .register, .login, .logout{
+        display: block;
+        padding: 0 0.1rem;
+        font-size: 0.28rem;
+        color: #ffffff;
+        opacity: .95;
+        &:active{
+            background-color: rgba(0,0,0,.2);
+        }
+        .ons-icon{
+            font-size: 0.32rem;
+            vertical-align: -10%;
+            margin: 0 0.1rem;
+        }
+    }
+}

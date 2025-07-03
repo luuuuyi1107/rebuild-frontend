@@ -1,0 +1,64 @@
+@import "@/_theme/theme.scss";
+.ssc-home{
+    .page__background{
+        background-color: #ffffff;
+    }
+    .broadcast-module{
+        //margin-bottom: 0.1rem;
+        border-bottom: 0.1rem solid $background-color;
+    }
+    .lottery-tab{
+        padding: 0 0.2rem;
+        .hd{
+            border-top: 1px solid $background-color;
+        }
+    }
+    .play-rules{
+        background-color: #ffffff;
+        padding: 0.2rem;
+        border-top: 0.1rem solid $background-color;
+        .box{
+            margin-bottom: 0.2rem;
+            border-bottom: 1px solid $background-color;
+            .hd{
+                font-size: 0.28rem;
+                height: 0.48rem;
+                line-height: 0.48rem;
+                padding-left: 0.1rem;
+                span{
+                    height: 0.48rem;
+                    line-height: 0.48rem;
+                    border-left: 0.04rem solid $primary-color;
+                    display: inline-block;
+                    text-indent: 0.1rem;
+                    color: #666;
+                }
+            }
+            .bd{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0.1rem 0 0.2rem;
+                .item{
+                    font-size: 0.28rem;
+                    max-width: 25%;
+                    flex: 0 0 25%;
+                    span{
+                        display: block;
+                        padding: 0.2rem 0;
+                        background-color: $background-color;
+                        text-align: center;
+                        border: 1px solid #f0f0f0;
+                        border-radius: 3px;
+                        margin: 0.1rem;
+                        color: #444;
+                        font-size: 0.28rem;
+                    }
+                    &:active span{
+                        background-color: $primary-color;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

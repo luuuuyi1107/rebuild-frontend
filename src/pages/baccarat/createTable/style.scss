@@ -1,0 +1,118 @@
+@import "@/_theme/theme.scss";
+.create-table{
+  .content{
+    padding: 0 0.2rem;
+  }
+  .item{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+    .inline{
+      margin-left: 0.2rem;
+      display: flex;
+      width: 74%;
+      &:nth-child(1){
+        width: 1.2rem;
+        font-size: 0.26rem;
+      }
+      &:nth-child(2){
+        flex: 1;
+      }
+    }
+    &.checkbox{
+      .inline:nth-child(2){
+        justify-content: flex-end;
+        align-items: center;
+      }
+      ons-switch{
+        vertical-align: middle;
+        min-width: 1.2rem;
+        width: 1.2rem;
+        height: 0.6rem;
+        line-height: 0.2rem;
+      }
+      .switch__handle{
+        top: 0;
+      }
+      .switch__toggle{
+        &:before{
+          content: "关";
+          height: 0.24rem;
+          width: 0.24rem;
+          color: #1f1f2e;
+          font-size: 0.24rem;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0.2rem;
+          margin: auto;
+        }
+      }
+      :checked + .switch__toggle > .switch__handle {
+        left: 0.64rem;
+        top: 1px;
+        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.25);
+      }
+      :checked + .switch__toggle{
+        box-shadow: inset 0 0 0 2px $primary-color;
+        background-color: $primary-color ;
+        &:before{
+          content: "开";
+          color: #fff;
+          font-size: 0.24rem;
+          right: auto;
+          left: 0.2rem;
+        }
+      }
+    }
+
+  }
+  .tip{
+    width: 100%;
+    padding-top: 0.3rem;
+    line-height: 0.4rem;
+    color: #8e8e8e;
+    p{
+      margin: 0 0.1rem;
+    }
+  }
+  .inputBox{
+    width: 100%;
+    margin: auto;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0;
+    border:none;
+    .ons-icon{
+      font-size: 0.4rem;
+      top: 0.3rem;
+      display: none;
+      &.subfix{
+        display: block;
+      }
+    }
+    ons-input input{
+      font-size: 0.26rem;
+      padding: 0;
+    }
+  }
+  .submit{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4rem;
+    .button{
+      width: 30%;
+    }
+  }
+  .submit{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.4rem;
+    .button{
+      width: 100%;
+    }
+  }
+}

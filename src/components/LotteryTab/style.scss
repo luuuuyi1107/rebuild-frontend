@@ -1,0 +1,140 @@
+@import "@/_theme/theme.scss";
+
+@mixin hash-replacement() {
+  color: #f77e04;
+  background: #fff;
+  border: 1px solid #f77e04;
+  position: relative;
+  &:after {
+    content: "";
+    background-image: url("/public/images/LotteryHead/bu.png");
+    background-size: 100% 100%;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.lottery-tab {
+  background-color: #fff;
+  font-size: 0.24rem;
+  .hd {
+    height: 0.64rem;
+    line-height: 0.64rem;
+    display: flex;
+    .tab {
+      flex: 1;
+      text-align: center;
+      font-size: 0.24rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 0.24rem;
+        width: 1px;
+        top: 0.2rem;
+        background-color: #ccc;
+      }
+      &:nth-child(1)::before {
+        display: none;
+      }
+      &:active {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      &.active {
+        color: $primary-color;
+        font-weight: bold;
+      }
+      &.forum {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:before {
+          display: none;
+        }
+        .forum-icon {
+          background: transparent url(/public/images/LotteryTab/forum-icon.png) no-repeat left top / cover;
+          width: 16px;
+          height: 16px;
+          margin-right: 2px;
+        }
+        &.id-3 {
+          background-color: #e3111c;
+        }
+        &.id-21 {
+          background-color: #087344;
+          .forum-icon {
+            background-position: -16px 0;
+          }
+        }
+      }
+    }
+  }
+  .bd {
+    padding: 0 0 0.1rem 0;
+    .intro {
+      padding: 0 0.2rem 0.1rem 0.2rem;
+      font-size: 0.24rem;
+      color: #666;
+      line-height: 1.6;
+      span {
+        color: red;
+        font-weight: bold;
+      }
+    }
+    .loading {
+      height: 0.6rem;
+      line-height: 0.6rem;
+      text-align: center;
+      font-size: 0.4rem;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      .ons-icon {
+        vertical-align: 0;
+      }
+    }
+    .no-record {
+      height: 0.6rem;
+      line-height: 0.6rem;
+      color: #999;
+      text-align: center;
+    }
+    .more {
+      background-color: $background-color;
+      color: #999;
+      text-align: center;
+      padding: 0.16rem 0;
+      margin-top: 0.1rem;
+      .ons-icon {
+        font-size: 0.32rem;
+        vertical-align: -15%;
+      }
+      &:active {
+        background-color: darken($background-color, 10);
+      }
+    }
+    .even {
+      background-color: $background-color;
+    }
+    .bet-record-item {
+      padding: 0.06rem 0;
+    }
+    .pks.ball-group {
+      .ball.hash-replacement {
+        @include hash-replacement();
+      }
+    }
+  }
+}
+.record-model {
+  .page__content {
+    overflow-y: auto !important;
+    .ball.hash-replacement {
+      @include hash-replacement();
+    }
+  }
+}

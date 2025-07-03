@@ -1,0 +1,12 @@
+@import "@/_theme/theme.scss";
+
+.order-post-credit-logs {
+  :global {
+    .info-section {
+      @include bg-toBottom($primary-color, #f1f1f1, 20%);
+    }
+    .page__background {
+      background-color: #f1f1f1;
+    }
+  }
+}

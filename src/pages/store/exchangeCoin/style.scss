@@ -1,0 +1,178 @@
+@import "@/_theme/theme.scss";
+
+.toolbar.inverse .toolbar__right .button {
+  height: 100%;
+  padding: 0 0.2rem;
+  line-height: 0.88rem;
+  font-size: 0.28rem;
+  background: transparent;
+}
+
+.icon-store {
+  .content {
+    padding: 0.2rem;
+    .title {
+      padding-left: 0.2rem;
+      position: relative;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      margin-bottom: 0.2rem;
+      &:before {
+        content: "";
+        width: 0.06rem;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f78712;
+      }
+    }
+    .btn-group {
+      display: flex;
+      justify-content: flex-start;
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0.3rem;
+        width: 25%;
+        border-radius: 5px;
+        .icon {
+          font-size: 0.6rem;
+          margin-bottom: 0.08rem;
+        }
+        &:active {
+          background: $background-color;
+        }
+      }
+    }
+  }
+}
+.icon-exchange {
+  .content {
+    padding: 0 0.4rem;
+
+    .title {
+      padding-left: 0.2rem;
+      position: relative;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      margin: 0.2rem 0;
+      &:before {
+        content: "";
+        width: 0.06rem;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f78712;
+      }
+    }
+
+    //.btn-group{
+    //  display: flex;
+    //  justify-content: flex-start;
+    //  .item{
+    //    display: flex;
+    //    justify-content: center;
+    //    align-items: center;
+    //    flex-direction: column;
+    //    margin-right: 0.3rem;
+    //    width: 25%;
+    //    border-radius: 5px;
+    //    .icon{
+    //      font-size: 0.6rem;
+    //      margin-bottom: 0.08rem;
+    //    }
+    //    &:active{
+    //      background: $background-color;
+    //    }
+    //  }
+    //}
+
+    .storeLink {
+      display: block;
+      height: 110px;
+      width: 100%;
+      background: url("/public/images/store/exchangeCoin/storeImg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .iconTop {
+      margin-top: 0.35rem;
+      font-size: 0.28rem;
+      .left {
+        display: inline-block;
+        width: 45%;
+        text-align: center;
+        vertical-align: text-top;
+        .ons-icon {
+          vertical-align: initial;
+          color: #991271;
+        }
+      }
+      .center {
+        display: inline-block;
+        width: 10%;
+        text-align: center;
+      }
+      .right {
+        display: inline-block;
+        width: 45%;
+        text-align: center;
+        vertical-align: text-top;
+        .ons-icon {
+          vertical-align: initial;
+          color: #455cf1;
+        }
+      }
+    }
+    .user-icon {
+      vertical-align: middle;
+      height: 0.7rem;
+      line-height: 0.7rem;
+      width: auto;
+      display: inline-block;
+    }
+    .moneyInput {
+      text-align: center;
+      padding: 0 0.2rem;
+      .inputBox {
+        vertical-align: middle;
+        display: inline-block;
+        width: 100%;
+        margin: 0.4rem 0;
+        padding-left: 5px;
+        padding-right: 0;
+        input {
+          padding: 0 0 0 5px;
+        }
+      }
+    }
+    .storeLink {
+      color: #f77e04;
+      margin-top: 0.2rem;
+      a {
+        border-bottom: 1px solid #f77e04;
+        text-decoration: none;
+        color: #f77e04;
+        margin-left: 0.1rem;
+      }
+    }
+  }
+
+  .submit {
+    width: 100%;
+    text-align: center;
+    //margin-top: 0.4rem;
+    .button {
+      width: 95%;
+      //margin: 0 2%;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}

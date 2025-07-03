@@ -1,0 +1,184 @@
+@import "@/_theme/theme.scss";
+
+.round-detail-modal{
+  .modal-inner{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+    .round-content{
+      width: 100%;
+      height: 8rem;
+      overflow-y: auto;
+      background: #fff;
+      //border-radius: 0 0 5px 5px;
+    }
+    .main-title{
+      color: #fff;
+      text-align: center;
+      line-height: 0.7rem;
+      font-size: 0.28rem;
+      background: $primary-color;
+    }
+    .title{
+      color: $primary-color;
+      text-align: center;
+      font-size: 0.28rem;
+      font-weight: bold;
+      padding: 0.2rem 0.3rem;
+      justify-content: space-around;
+      display: flex;
+    }
+    .round-info{
+      color: #000;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.2rem 0;
+      justify-content: center;
+      .item{
+        display: flex;
+        color: #666;
+        line-height: 0.4rem;
+        &:first-child{
+          color: #1f1f21;
+          //border-right: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        .poker{
+          display: flex;
+          justify-content: center;
+          margin: 0.1rem 0;
+          .poker-card{
+            border: 1px solid #777;
+            border-radius: 3px;
+            margin: 0 0.06rem;
+          }
+        }
+      }
+      .dian{
+        min-width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0.3rem;
+        .dianItem{
+          line-height: 0.6rem;
+          width: 100%;
+          text-align: center;
+          &.poker{
+            margin-top: .25rem;
+          }
+          .profession{
+            padding: 5px 20px;
+            color: #fff;
+            border-radius: 15px;
+          }
+        }
+      }
+      .Zdian .dianItem .profession{
+        background: $primary-color;
+      }
+      .Xdian .dianItem .profession{
+        background: #214597;
+      }
+      .p30{
+        width: 33%;
+        justify-content: center;
+      }
+    }
+
+    .round-bet{
+      .page__content{
+        overflow-y: auto !important;
+        padding: 0;
+      }
+      .page,.page__content,ons-splitter,ons-splitter-content{
+        position: relative !important;
+        top: 0;
+      }
+      .baccarat-gameRoundBetDetail{
+        .inverse{
+          display: none;
+        }
+      }
+    }
+
+  }
+  .close{
+    text-align: center;
+    font-size: 0.4rem;
+    margin-top: 0.2rem;
+    color: #fff;
+  }
+}
+.goldenPK-history{
+  .record-list-item{
+    padding: 0;
+    background: transparent;
+  }
+  .recordItem{
+    display: flex;
+    padding: 0;
+    .tl{
+      background: #009268;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p{
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        margin: 0.03rem 0;
+      }
+    }
+    .info{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 0.2rem;
+      justify-content: center;
+      .name{
+        span{
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background: #009268;
+          border-radius: 50%;
+          text-align: center;
+          color: #fff;
+          margin-right: 5px;
+          vertical-align: 0.03rem;
+        }
+      }
+      .money{
+        margin-top: 0.1rem;
+      }
+    }
+    .right{
+      width: 40%;
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      span{
+        padding: 0.05rem 0.2rem;
+        border-radius: 15px;
+        color: #fff;
+        vertical-align: 3px;
+        margin-right: 0.2rem;
+      }
+      .state{
+        background: #999999;
+      }
+      .win{
+        background: $primary-color;
+      }
+      .lose{
+        background: #0576F6;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,16 @@
+.site-deposit {
+  :global {
+    .page__background {
+      @apply bg-[#F4F5F9];
+    }
+    .money-btn {
+      @apply w-1/5 bg-[#F9F9FA] py-0.5 border border-[#E0E0E0] border-solid text-[#666666] text-center rounded-sm;
+      &.active {
+        @apply bg-[#FF9933] text-white border-transparent;
+      }
+    }
+    .money-input::placeholder {
+      @apply text-[#AEAEAE];
+    }
+  }
+}

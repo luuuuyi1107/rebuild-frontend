@@ -1,0 +1,34 @@
+@import "@/_theme/theme.scss";
+
+
+.LastKaiArea {
+
+
+  .result {
+    margin-left: 25px;
+    color: white;
+    font-size: 14px;
+
+  }
+
+  .hx-item {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    color: white;
+    font-size: 14px;
+    img {
+      margin-left: 15px;
+      width: 50px;
+    }
+  }
+
+  .latest_draw {
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-top: 12px;
+  }
+
+}
