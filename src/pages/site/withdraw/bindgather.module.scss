@@ -1,7 +1,0 @@
-@import "@/_theme/theme.scss";
-.Bind {
-  @include bg-toBottom($primary-color, #f4f5f9, 50%);
-  @apply px-1 pb-1 font-[400];
-}
-
-// "p-0.5 bg-white border-b border-gray-200 border-solid border-t-0 border-x-0"
